@@ -1,0 +1,1724 @@
+{
+  "intents": [
+  {
+        "tag": "saludo",
+        "patterns": [
+            "hola",
+            "qué tal",
+            "cómo estás",
+            "saludos",
+            "buenos días",
+            "buenas tardes"
+        ],
+        "responses": [
+            "Hola! ¿En qué puedo ayudarte?",
+            "¡Saludos! ¿En qué puedo ayudarte?"
+        ]
+    },
+    {
+        "tag": "firmagob_01_convenio_min_de_educación_us_y_cfts",
+        "patterns": [
+            "¿Qué es el convenio Mineduc para CFTs?",
+            "¿Cómo se adhieren las universidades al convenio Mineduc?",
+            "necesito el documento de aceptación de condiciones de uso",
+            "dónde tramito el convenio con el Ministerio de Educación",
+            "info convenio mineduc us y cfts"
+        ],
+        "responses": [
+            "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! En relación a tu consulta, te informamos que deben adherirse al convenio del Ministerio de Educación y tramitar el documento de aceptación de condiciones de uso. Para más detalles, pueden revisar el siguiente documento de ejemplo: Modelo de Aceptación de Condiciones de Uso. Si tienes alguna otra duda o consulta, no dudes en contactarte con nosotros. Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket Recuerde mantener comunicación con su Operador(a) o Coordinador(a) de Transformación Digital."
+        ]
+    },
+    {
+        "tag": "firmagob_02_debe_dirigirse_a_mineduc",
+        "patterns": [
+            "Tengo una solicitud para el MINEDUC",
+            "¿Cómo envío mi solicitud al Ministerio de Educación?",
+            "Mi trámite es del MINEDUC, ¿lo ven ustedes?",
+            "necesito gestionar algo con el MINEDUC",
+            "me mandaron a preguntarles a ustedes por un trámite de Mineduc"
+        ],
+        "responses": [
+            "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! En relación a tu consulta, te informamos que debes enviar tu solicitud directamente al Ministerio de Educación (MINEDUC). Ellos serán los encargados de gestionar y responder tu requerimiento. Si necesitas más información sobre cómo realizar el trámite, te recomendamos visitar su página web o ponerte en contacto con ellos a través de los canales oficiales. Quedamos atentos a cualquier otra consulta que puedas tener. Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket Recuerde mantener comunicación con su Operador(a) o Coordinador(a) de Transformación Digital."
+        ]
+    },
+    {
+        "tag": "firmagob_03_corporaciones_municipales_corporaciones_de_derecho_privado",
+        "patterns": [
+            "¿Puede una corporación municipal usar FirmaGob?",
+            "¿Las corporaciones de derecho privado pueden tener FirmaGob?",
+            "Por qué mi corporación no puede acceder a FirmaGob",
+            "mi entidad es de derecho privado, ¿puedo usar FirmaGob?",
+            "FirmaGob es para corporaciones municipales?"
+        ],
+        "responses": [
+            "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! En relación a tu consulta, te informamos que no pueden acceder a FirmaGob debido a que la Ley Firma no faculta a entidades con personalidad jurídica de derecho privado para utilizar este servicio. Si tienes alguna otra duda, no dudes en contactarte con nosotros. Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket Recuerde mantener comunicación con su Operador(a) o Coordinador(a) de Transformación Digital."
+        ]
+    },
+    {
+        "tag": "firmagob_04_problemas_con_otp",
+        "patterns": [
+            "Tengo problemas con el OTP",
+            "No me funciona el Google Authenticator",
+            "El código OTP me da error",
+            "No puedo firmar por el OTP",
+            "error de segundo factor"
+        ],
+        "responses": [
+            "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! En relación a tu consulta, sobre el error reportado, este puede deberse a una configuración incorrecta en el celular utilizado. Te sugerimos realizar los siguientes pasos: Verifica que tu celular esté configurado en zona horaria automática. Borra el certificado en Google Authenticator y escanéalo nuevamente. Si el problema persiste, prueba utilizando la extensión de Chrome para Google Authenticator y escanea el certificado desde un PC. Verificación adicional: Accede a Herramientas de FirmaGob. Escanea el QR con Google Authenticator y verifica los códigos ingresados. Para más detalles, consulta el Manual de Configuración del 2º Factor. Quedamos atentos a cualquier otra duda o consulta que puedas tener. Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket Recuerde mantener comunicación con su Operador(a) o Coordinador(a) de Transformación Digital."
+        ]
+    },
+    {
+        "tag": "firmagob_05_usar_firmagob_en_documentos_legales",
+        "patterns": [
+            "¿FirmaGob tiene validez jurídica?",
+            "¿Puedo usar FirmaGob para firmar documentos legales?",
+            "¿La firma de FirmaGob es válida?",
+            "necesito revisar la validez legal de firmagob",
+            "es legal usar firmagob en contratos"
+        ],
+        "responses": [
+            "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! En relación a tu consulta, te comentamos lo siguiente: La firma electrónica avanzada obtenida en FirmaGob tiene validez jurídica como cualquier otra firma electrónica avanzada disponible en el mercado y puede ser utilizada conforme a las necesidades de la institución. Sin embargo, recomendamos que esta utilización sea revisada previamente con el Área Jurídica de tu institución para garantizar el cumplimiento normativo. Si tienes alguna otra duda, no dudes en contactarte con nosotros. Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket Recuerde mantener comunicación con su Operador(a) o Coordinador(a) de Transformación Digital."
+        ]
+    },
+    {
+        "tag": "firmagob_06_habilitar_municipalidades",
+        "patterns": [
+            "¿Cómo habilito FirmaGob para una municipalidad?",
+            "¿Qué convenio necesita una municipalidad para FirmaGob?",
+            "dónde inicio el trámite de FirmaGob para mi municipalidad",
+            "link para habilitar municipalidades",
+            "pasos para que una municipalidad use FirmaGob"
+        ],
+        "responses": [
+            "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! En relación a tu consulta, te informamos que para hacer uso de la plataforma de Firma Electrónica Avanzada, su Municipalidad deberá suscribir un convenio de colaboración. Para iniciar la tramitación del mismo, por favor ingresa con tu ClaveÚnica a la siguiente URL de CeroFilas y sigue los pasos indicados. Adicionalmente, puedes encontrar los manuales en el siguiente enlace: manuales de FirmaGob. Si tienes alguna otra duda o consulta, no dudes en contactarte con nosotros. Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket Recuerde mantener comunicación con su Operador(a) o Coordinador(a) de Transformación Digital."
+        ]
+    },
+    {
+        "tag": "firmagob_07_error_de_aplicaciónen_api",
+        "patterns": [
+            "Tengo un error en la API",
+            "La API me da error de aplicación",
+            "¿Qué datos necesitan para revisar un error de la API?",
+            "cómo reporto un error de la API",
+            "me piden el token key y secret para un error"
+        ],
+        "responses": [
+            "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! En relación a tu consulta, te informamos que para poder revisar el incidente, necesitamos que nos envíes los siguientes datos: Token key de la aplicación. Secret de la aplicación. URL de la API utilizada. Request enviado a la API (en formato txt o json). Breve descripción del error. Si tienes alguna otra duda o consulta, no dudes en contactarte con nosotros. Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket Recuerde mantener comunicación con su Operador(a) o Coordinador(a) de Transformación Digital."
+        ]
+    },
+    {
+        "tag": "firmagob_08_cambios_de_rol_que_se_pueden_realizar",
+        "patterns": [
+            "¿Qué roles puede cambiar un Operador?",
+            "¿Un Operador puede nombrar a otro Operador?",
+            "¿Cómo se asigna el rol de Ministro de Fe?",
+            "¿Puedo cambiar un Ministro de Fe a Funcionario?",
+            "limitaciones de cambio de rol del operador"
+        ],
+        "responses": [
+            "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! En relación a tu consulta, te informamos que los cambios de roles que un Operador puede realizar son los siguientes: Desde Ministro de Fe, puede modificar a Funcionario o Autoridad. Desde Operador, puede modificar a Funcionario o Autoridad. Cualquier otro cambio, como la asignación de Operador o Ministro de Fe, debe ser solicitado a través de este enlace para \"Solicitud de Registros FirmaGob.\" Si tienes alguna otra duda, no dudes en contactarnos. Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket Recuerde mantener comunicación con su Operador(a) o Coordinador(a) de Transformación Digital."
+        ]
+    },
+    {
+        "tag": "firmagob_09_desvinculación_de_usuario",
+        "patterns": [
+            "¿Qué hago si un funcionario es desvinculado?",
+            "Tengo que desvincular a un usuario",
+            "Cómo bloquear a un usuario desvinculado",
+            "proceso de desvinculación de un funcionario en FirmaGob",
+            "se fue un usuario, cómo lo elimino"
+        ],
+        "responses": [
+            "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! En relación a tu consulta, te informamos que cuando un funcionario es desvinculado de la Institución, el operador debe revocar su certificado y bloquear al usuario. Para más detalles sobre cómo realizar esta operación, te recomendamos revisar el manual del operador en el siguiente enlace: Manual del Operador FirmaGob. Si tienes alguna otra duda o consulta, no dudes en contactarte con nosotros. Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket Recuerde mantener comunicación con su Operador(a) o Coordinador(a) de Transformación Digital."
+        ]
+    },
+    {
+        "tag": "firmagob_10_firma_desatendida_-_firma_masiva",
+        "patterns": [
+            "¿Existe la firma masiva en FirmaGob?",
+            "¿Qué es la firma desatendida?",
+            "¿La firma desatendida usa OTP?",
+            "diferencia entre firma masiva y desatendida",
+            "límite de documentos para firmar por API"
+        ],
+        "responses": [
+            "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! En relación a tu consulta, te informamos que actualmente, no contamos con una opción de firma masiva en nuestra plataforma. Sin embargo, a través de la API, puedes enviar hasta 5 megas de documentos para ser firmados, utilizando el hash del documento. Para la firma desatendida, esta permite evitar la solicitud del código OTP al usuario y está pensada para procesos automáticos sin revisión de los documentos. Si tienes alguna otra duda o consulta, no dudes en contactarte con nosotros. Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket Recuerde mantener comunicación con su Operador(a) o Coordinador(a) de Transformación Digital."
+        ]
+    },
+    {
+        "tag": "firmagob_11_plantilla_base_de_producto",
+        "patterns": [
+            "¿Qué es la plantilla base de producto?",
+            "dónde encuentro la plantilla base",
+            "información sobre la plantilla base de producto",
+            "para qué sirve la plantilla base",
+            "duda sobre plantilla base"
+        ],
+        "responses": [
+            "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! En relación a tu consulta, te informamos que Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket Recuerde mantener comunicación con su Operador(a) o Coordinador(a) de Transformación Digital."
+        ]
+    },
+    {
+        "tag": "firmagob_12_cambio_de_rol_del_operador",
+        "patterns": [
+            "Soy Operador, ¿cómo puedo firmar documentos?",
+            "¿Un Operador puede firmar?",
+            "necesito firmar un documento pero soy Operador",
+            "cambiar mi propio rol de Operador a Funcionario",
+            "el operador puede tener firma?"
+        ],
+        "responses": [
+            "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! En relación a tu consulta, te comentamos lo siguiente: Para que el Operador pueda firmar, debe modificar su rol a \"Funcionario o Autoridad\" en la plataforma FirmaGob. Esto le permitirá obtener firma y, a la vez, mantener los permisos de Operador para gestionar usuarios y certificados. El cambio de rol puede realizarlo directamente en la plataforma. Si tienes alguna otra consulta, no dudes en contactarte con nosotros. Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket Recuerde mantener comunicación con su Operador(a) o Coordinador(a) de Transformación Digital."
+        ]
+    },
+    {
+        "tag": "firmagob_13_cambio_de_operador_y_otros_datos",
+        "patterns": [
+            "El Operador de mi institución se fue, ¿cómo lo cambio?",
+            "necesito cambiar al Operador",
+            "dónde solicito el cambio de Operador",
+            "cómo se designa un nuevo Operador en CeroFilas",
+            "no tenemos Operador, qué hago"
+        ],
+        "responses": [
+            "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! En relación a tu consulta, te comentamos que el cambio de Operador debe ser solicitado a través de nuestro sitio de CeroFilas, seleccionando la opción \"Solicitud de Registros FirmaGob\", indicando en el campo de Observaciones que ya no cuenta con su Operador designado. Se recomienda agregar más de 1 Operador para efectos de continuidad operacional. Es importante considerar que el tiempo de respuesta (SLA) para el nombramiento es de 3 días hábiles. Si tienes alguna otra duda o consulta, no dudes en contactarte con nosotros. Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket Recuerde mantener comunicación con su Operador(a) o Coordinador(a) de Transformación Digital."
+        ]
+    },
+    {
+        "tag": "firmagob_14_agregar_un_ministro_de_fe",
+        "patterns": [
+            "¿Cómo agrego un Ministro de Fe?",
+            "pasos para agregar un Ministro de Fe",
+            "El Operador ya creó al usuario, ¿cómo lo hago Ministro de Fe?",
+            "dónde solicito la designación de Ministro de Fe",
+            "cuánto se demora el nombramiento de Ministro de Fe"
+        ],
+        "responses": [
+            "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! En relación a tu consulta, te comentamos que  el Operador debe crear al usuario en la plataforma, luego de eso deben ingresar a nuestro sitio de Cerofilas, seleccionar la opción \"Solicitud de Registros FirmaGob\", luego seleccionar \"Designación de Ministro de Fe\" y completar los datos solicitados. Cabe mencionar que el tiempo de respuesta (SLA) para el nombramiento es de 5 días hábiles. Si tienes alguna otra duda o consulta, no dudes en contactarte con nosotros. Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket Recuerde mantener comunicación con su Operador(a) o Coordinador(a) de Transformación Digital."
+        ]
+    },
+    {
+        "tag": "firmagob_15_registro_en_ambiente_de_testproducción",
+        "patterns": [
+            "¿Cómo registro mi aplicación en ambiente de test?",
+            "dónde solicito el registro en producción",
+            "link para registrar app en test o producción",
+            "SLA de registro de aplicaciones",
+            "necesito registrar mi app en CeroFilas"
+        ],
+        "responses": [
+            "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! En relación a tu consulta, te comentamos lo siguiente: El registro de aplicaciones, tanto en el ambiente de Test como en Producción, debe solicitarse a través de la siguiente URL: https://gobdigital.cerofilas.gob.cl/, seleccionando la opción \"Solicitud de Registros FirmaGob\". Cabe mencionar que el tiempo de respuesta (SLA) para el registro de aplicaciones es de 3 días hábiles. Si tienes alguna otra duda o consulta, no dudes en contactarte con nosotros. Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket Recuerde mantener comunicación con su Operador(a) o Coordinador(a) de Transformación Digital."
+        ]
+    },
+    {
+        "tag": "firmagob_16_integración_de_aplicación",
+        "patterns": [
+            "¿Cómo integro mi aplicación con FirmaGob?",
+            "dónde está el Manual de Integración API FirmaGob",
+            "pasos para integrar una app",
+            "ya integré mi app, ¿cómo la registro?",
+            "quiero conectar mi sistema con la API de FirmaGob"
+        ],
+        "responses": [
+            "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! En relación a tu consulta, te comentamos lo siguiente: Para integrar su aplicación con la plataforma FirmaGob, deben revisar y seguir las indicaciones del Manual de Integración API FirmaGob. Una vez que la integración esté lista, deben solicitar el registro de la aplicación en CeroFilas, opción \"Solicitud de Registros FirmaGob\". Cabe mencionar que el tiempo de respuesta (SLA) para el registro de aplicaciones es de 3 días hábiles. Si tienes alguna otra duda o consulta, no dudes en contactarte con nosotros. Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket Recuerde mantener comunicación con su Operador(a) o Coordinador(a) de Transformación Digital."
+        ]
+    },
+    {
+        "tag": "firmagob_17_para_firmar_en_mercado_público",
+        "patterns": [
+            "¿Cómo firmo en Mercado Público con FirmaGob?",
+            "pasos para usar FirmaGob en ChileCompra",
+            "necesito firmar en Mercado Público",
+            "qué certificado necesito para Mercado Público",
+            "el operador me tiene que registrar para mercado público?"
+        ],
+        "responses": [
+            "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! En relación a tu consulta, te informamos lo siguiente: Para firmar en Mercado Público, deben seguir los siguientes pasos: Autorización previa: El usuario debe estar autorizado para firmar en Mercado Público. Registro en FirmaGob: El Operador de la Institución debe registrar al usuario en la plataforma FirmaGob. Solicitud de certificado: Una vez registrado, el usuario debe ingresar a FirmaGob y solicitar un certificado de firma de propósito general. Si tienes alguna otra duda o consulta, no dudes en contactarte con nosotros. Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket Recuerde mantener comunicación con su Operador(a) o Coordinador(a) de Transformación Digital."
+        ]
+    },
+    {
+        "tag": "firmagob_18_habilitación_en_plataforma_firmagob",
+        "patterns": [
+            "¿Cuáles son los pasos para habilitar FirmaGob en mi institución?",
+            "¿Qué es el acto administrativo para FirmaGob?",
+            "necesito habilitar mi institución",
+            "SLA para habilitación de institución",
+            "qué datos necesito para la solicitud de habilitación"
+        ],
+        "responses": [
+            "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! En relación a tu consulta, te informamos los pasos para habilitar tu Institución en la plataforma FirmaGob: Acto administrativo: Firmar un acto administrativo aceptando las condiciones de uso de la plataforma. Modelo de documento aquí. Designación de roles: Asignar roles de Operador y Ministro de Fe. Solicitud de habilitación: Ingresar a CeroFilas en la opción \"Solicitud de Registros FirmaGob\". Datos requeridos: Acto administrativo firmado. RUT Institución, Operador y datos de contacto (nombre, correo, cargo). SLA: Operador: 3 días hábiles. Ministro de Fe: 5 días hábiles. Habilitación Institución: 5 días hábiles. Si tienes más consultas, no dudes en contactarte con nostros. Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket Recuerde mantener comunicación con su Operador(a) o Coordinador(a) de Transformación Digital."
+        ]
+    },
+    {
+        "tag": "firmagob_19_consulta_cambio_ministro_de_fe",
+        "patterns": [
+            "Necesito cambiar al Ministro de Fe, ¿qué hago?",
+            "¿Cómo se cambia un Ministro de Fe?",
+            "El Ministro de Fe se fue, ¿cómo nombro a otro?",
+            "pasos para cambiar ministro de fe",
+            "el operador puede cambiar al ministro de fe?"
+        ],
+        "responses": [
+            "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! En relación a tu consulta, te informamos que para designar a un nuevo Ministro de Fe, se deben seguir los siguientes pasos: Contar con un documento que respalde su designación (ley o resolución). El operador de la Institución debe registrarlo como usuario en la plataforma. Solicitar la asignación del rol en la plataforma en la URL: Solicitud de Registros FirmaGob en la opción \"Asignación de Ministro de Fe\", adjuntando el documento mencionado. Cabe mencionar que el SLA de nombramiento es de 5 días hábiles. Para el Ministro de Fe saliente, el operador debe cambiar su rol y bloquearlo si ya no pertenece a la Institución. Para más información sobre este proceso, revisa los recursos disponibles en nuestra Biblioteca de Manuales FirmaGob. Si tienes alguna otra pregunta, no dudes en contactarte con nosotros. Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket Recuerde mantener comunicación con su Operador(a) o Coordinador(a) de Transformación Digital."
+        ]
+    },
+    {
+        "tag": "firmagob_20_otorgar_permisos_al_certificado_para_firmar_en_una_aplicación",
+        "patterns": [
+            "No puedo firmar en mi aplicación",
+            "Me falta otorgar permiso al certificado desatendido",
+            "dónde habilito la aplicación para un certificado desatendido",
+            "cómo doy permisos a un certificado desatendido",
+            "me falta permiso en la app [NOMBRE DE LA APLICACIÓN]"
+        ],
+        "responses": [
+            "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! En relación a tu consulta, hemos revisado los datos enviados y hemos observado que al usuario le falta otorgar permiso al certificado desatendido para firmar en la aplicación [NOMBRE DE LA APLICACIÓN]. Para resolver esto, el usuario debe ingresar a la opción \"Permisos de certificados desatendidos\" en el menú de la plataforma FirmaGob y habilitar la aplicación en la que desea firmar. Si tienes alguna otra duda, no dudes en contactarnos. Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket Recuerde mantener comunicación con su Operador(a) o Coordinador(a) de Transformación Digital."
+        ]
+    },
+    {
+        "tag": "firmagob_21_plataformas_vinculadas_a_firmagob_a_la_fecha",
+        "patterns": [
+            "¿Con qué plataformas está integrado FirmaGob?",
+            "¿FirmaGob funciona con ChileCompra?",
+            "lista de aplicaciones integradas con FirmaGob",
+            "¿FirmaGob está vinculado con DocDigital?",
+            "¿Qué es SIMPLE?"
+        ],
+        "responses": [
+            "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! En relación a tu consulta, te informamos que FirmaGob está integrado con las siguientes instituciones/aplicaciones: SIMPLE DocDigital (aún no habilitada para Municipios, se notificará oportunamente) Chilecompra DOM en línea (MINVU) SEA (Servicio de evaluación ambiental) SEIM (Sistema de evaluación de impacto en la movilidad MTT) SIAPER (Contraloría General de la República) Te invitamos a revisar los videos y manuales del producto FirmaGob disponibles en el pie de página de este ticket. Si tienes alguna otra duda, no dudes en contactarnos. Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket Recuerde mantener comunicación con su Operador(a) o Coordinador(a) de Transformación Digital."
+        ]
+    },
+    {
+        "tag": "firmagob_22_requisitos_para_ser_ministro_de_fe",
+        "patterns": [
+            "¿Cuáles son los requisitos para ser Ministro de Fe?",
+            "¿Quién puede ser Ministro de Fe?",
+            "¿Cómo se designa un Ministro de Fe?",
+            "qué ley regula los ministros de fe",
+            "Un funcionario de planta puede ser Ministro de Fe?"
+        ],
+        "responses": [
+            "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! En relación a tu consulta, te informamos que, conforme al artículo 40 del Reglamento de la Ley N° 19.799 sobre Documentos Electrónicos, la certificación de firmas electrónicas avanzadas de autoridades o funcionarios públicos debe ser realizada por los respectivos ministros de fe. Si no hay ministro de fe designado, el jefe superior del servicio deberá designar un funcionario público de planta por resolución. Para más detalles, consulta el artículo completo aquí: Ley N° 19.799. Si tienes más preguntas, no dudes en contactarnos. Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket Recuerde mantener comunicación con su Operador(a) o Coordinador(a) de Transformación Digital."
+        ]
+    },
+    {
+        "tag": "firmagob_23_fecha_expiración_token",
+        "patterns": [
+            "Me da error de fecha de expiración del token",
+            "cuánto dura el token de la API",
+            "error 'expiration' incorrecta",
+            "cuál es el tiempo máximo para el parámetro expiration",
+            "El token no debe superar los 30 minutos"
+        ],
+        "responses": [
+            "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! En relación a tu consulta, te comentamos que el error se debe a que la fecha de expiración enviada es incorrecta. El valor del parámetro expiration no debe superar los 30 minutos desde la llamada a la API. Te sugerimos corregir este valor y realizar nuevamente la operación. Si tienes alguna otra pregunta o duda, no dudes en contactarnos. Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket Recuerde mantener comunicación con su Operador(a) o Coordinador(a) de Transformación Digital."
+        ]
+    },
+    {
+        "tag": "firmagob_24_agregar_operador_adicional",
+        "patterns": [
+            "¿Cómo agrego un operador adicional?",
+            "¿Puedo tener más de un operador?",
+            "El operador titular quiere agregar un suplente",
+            "qué permisos necesita un operador adicional",
+            "el operador titular puede registrar a otro operador?"
+        ],
+        "responses": [
+            "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! En relación a tu consulta, te informamos que para registrar un Operador adicional en la plataforma FirmaGob, el Operador titular debe seguir estos pasos: Ingresar a https://firma.digital.gob.cl/ con su clave única. En la opción Gestión de Usuarios, registrar al usuario que será el Operador adicional. Una vez registrado, debe asignarle los siguientes permisos: Gestión de Usuarios Gestión de Certificados De este modo, contarán con un Operador adicional para gestionar los usuarios de su institución sin necesidad de realizar la solicitud en Cerofilas. Para más información, revisa el manual del Operador disponible en aquí. Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket Recuerde mantener comunicación con su Operador(a) o Coordinador(a) de Transformación Digital."
+        ]
+    },
+    {
+        "tag": "firmagob_25_para_el_daem_municipal_-_contactar_al_operador",
+        "patterns": [
+            "Tengo una consulta del DAEM",
+            "El DAEM municipal me pregunta algo",
+            "¿Quién gestiona el DAEM?",
+            "duda sobre el DAEM",
+            "me preguntan por el DAEM de mi municipalidad"
+        ],
+        "responses": [
+            "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! En relación a tu consulta, te informamos que estos temas son administrados y gestionados por el Municipio, por lo que sugerimos que te pongas en contacto con el Operador de tu Institución para que te brinde la asistencia necesaria. Si tienes alguna otra duda o consulta, no dudes en contactarte con nosotros. Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket Recuerde mantener comunicación con su Operador(a) o Coordinador(a) de Transformación Digital."
+        ]
+    },
+    {
+        "tag": "firmagob_26_requisitos_del_personal_para_firmarincluye_personal_a_honorarios",
+        "patterns": [
+            "¿El personal a honorarios puede usar FirmaGob?",
+            "¿Un funcionario a honorarios puede firmar?",
+            "restricciones para personal a honorarios",
+            "quién decide si los honorarios pueden firmar",
+            "ley 19.799 honorarios"
+        ],
+        "responses": [
+            "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! En relación a tu consulta, te informamos que, según las disposiciones legales en los artículos 6, 7 y 9 de la Ley 19.799, y el artículo 9A de la Ley 18.993, no hay restricción que impida a los órganos del Estado emitir certificados de firma electrónica avanzada para personal a honorarios. Es responsabilidad de cada órgano decidir quiénes dentro de su organización están facultados para suscribir determinados actos y otorgar estos certificados. Si tienes más dudas, no dudes en contactarnos. Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket Recuerde mantener comunicación con su Operador(a) o Coordinador(a) de Transformación Digital."
+        ]
+    },
+    {
+        "tag": "firmagob_27_cómo_operar_con_siaper",
+        "patterns": [
+            "¿Cómo opero con SIAPER?",
+            "pasos para usar SIAPER con FirmaGob",
+            "qué necesito para SIAPER",
+            "enrolamiento en SIAPER",
+            "¿SIAPER necesita OTP?"
+        ],
+        "responses": [
+            "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! En relación a tu consulta, te informamos que para comenzar con el uso de SIAPER, debes realizar los siguientes pasos: Contactar a la Mesa de Ayuda de SIAPER para solicitar el enrolamiento de tu Institución. Asegurarte de que la Institución esté operando con FirmaGob y con el OTP (segundo factor de autenticación) habilitado en los celulares. Asegúrate de definir el propósito de la firma como \"Propósito General\" en FirmaGob. Con estos pasos podrás operar sin inconvenientes. Si tienes más dudas, no dudes en contactarnos Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket Recuerde mantener comunicación con su Operador(a) o Coordinador(a) de Transformación Digital."
+        ]
+    },
+    {
+        "tag": "firmagob_28_cambio_de_firmante_no_afecta_a_aplicación_registrada",
+        "patterns": [
+            "Si cambio un firmante, ¿afecta a la aplicación?",
+            "¿Las aplicaciones registradas dependen de los firmantes?",
+            "se fue un firmante, ¿tengo que re-registrar la app?",
+            "las aplicaciones son independientes de las personas?",
+            "cambio de firmante"
+        ],
+        "responses": [
+            "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! En relación a tu consulta, te informamos que el cambio de Firmante no afecta las aplicaciones registradas, ya que estas son independientes de las personas que firman. Por lo tanto, las aplicaciones seguirán operando normalmente después de realizar el cambio. Si tienes alguna otra consulta, no dudes en contactarnos. Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket Recuerde mantener comunicación con su Operador(a) o Coordinador(a) de Transformación Digital."
+        ]
+    },
+    {
+        "tag": "firmagob_29_diferencia_entre_firma_atendida_y_desatendida",
+        "patterns": [
+            "¿Cuál es la diferencia entre firma atendida y desatendida?",
+            "¿Qué es la firma atendida?",
+            "¿Para qué sirve la firma desatendida?",
+            "Firma atendida vs desatendida",
+            "¿La firma desatendida usa OTP?"
+        ],
+        "responses": [
+            "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! En relación a tu consulta, te informamos las diferencias entre Firma Atendida y Firma Desatendida: Firma Atendida: Requiere la intervención del firmante para ingresar un código OTP cada vez que se firma un documento. Firma Desatendida: Utilizada para procesos automáticos, donde el firmante autoriza previamente la aplicación para firmar sin necesidad de su intervención cada vez. Si tienes más dudas, no dudes en contactarnos. Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket Recuerde mantener comunicación con su Operador(a) o Coordinador(a) de Transformación Digital."
+        ]
+    },
+    {
+        "tag": "firmagob_30_modelo_de_designación_de_roles_municipalidades",
+        "patterns": [
+            "¿Dónde está el modelo de designación de roles para municipalidades?",
+            "necesito el documento de asignación de roles de muni",
+            "modelo de roles para municipalidades",
+            "documento con pasos para asignar roles en municipalidades",
+            "descargar modelo de asignación de roles"
+        ],
+        "responses": [
+            "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! En relación a tu consulta, te informamos que adjuntamos el documento con el Modelo de Asignación de Roles para Municipalidades en la plataforma FirmaGob. Este documento proporciona los detalles sobre los pasos y requisitos para la asignación adecuada de roles dentro de la plataforma. Para cualquier consulta adicional o aclaración, no dudes en contactarnos. Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket Recuerde mantener comunicación con su Operador(a) o Coordinador(a) de Transformación Digital."
+        ]
+    },
+    {
+        "tag": "firmagob_31_cuando_aparece_otro_cargo_al_firmar",
+        "patterns": [
+            "Cuando firmo aparece un cargo incorrecto",
+            "el cargo que aparece al firmar está mal",
+            "¿Por qué aparece otro cargo cuando firmo?",
+            "la API de firma imprime mal el cargo",
+            "mi cargo está malo en la firma"
+        ],
+        "responses": [
+            "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! En relación a tu consulta, te informamos que el error reportado se encuentra fuera de nuestro alcance y requiere una revisión de la aplicación en la que el usuario está firmando, ya que nuestra API de firma no imprime esos datos. Esta función es realizada por la aplicación integrada. Te sugerimos contactar a las personas responsables de la aplicación para que revisen su configuración. Para más información, revisa los manuales de FirmaGob en este enlace. Para cualquier consulta adicional o aclaración, no dudes en contactarnos. Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket Recuerde mantener comunicación con su Operador(a) o Coordinador(a) de Transformación Digital."
+        ]
+    },
+    {
+        "tag": "firmagob_32_autocertificación_de_ministro_de_fe",
+        "patterns": [
+            "¿Cómo se autocertifica un Ministro de Fe?",
+            "pasos para la autocertificación del Ministro de Fe",
+            "El ministro de fe necesita autocertificarse",
+            "dónde está la opción de autocertificación",
+            "manual de autocertificación ministro de fe"
+        ],
+        "responses": [
+            "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! En relación a tu consulta, para que el Ministro de Fe se autocertifique, debe seguir los siguientes pasos: Ir a la opción \"Mis certificados\" y solicitar un nuevo certificado. Proceder a la autocertificación, siguiendo las indicaciones del Manual del Ministro de Fe, sección 3.3, \"Autocertificación y certificación a terceros\". Una vez completado este proceso, el Ministro de Fe podrá aprobar solicitudes de certificado de otros firmantes. Para más información, puedes consultar el Manual del Ministro de Fe. Para cualquier consulta adicional o aclaración, no dudes en contactarnos. Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket Recuerde mantener comunicación con su Operador(a) o Coordinador(a) de Transformación Digital."
+        ]
+    },
+    {
+        "tag": "firmagob_33_uso_de_archivo_pem",
+        "patterns": [
+            "¿Para qué sirve el archivo .PEM?",
+            "No puedo ver la info del certificado en un .PEM",
+            "Cómo veo la información de un archivo PEM",
+            "renombrar .pem a .cer",
+            "el archivo PEM no muestra todos los datos"
+        ],
+        "responses": [
+            "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! En relación a tu consulta, te informamos que el archivo con extensión .PEM solo permite visualizar los datos del certificado. Para poder ver toda la información contenida en el certificado, debes renombrar el archivo y cambiar su extensión a .CER. Para cualquier consulta adicional o aclaración, no dudes en contactarnos. Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket Recuerde mantener comunicación con su Operador(a) o Coordinador(a) de Transformación Digital."
+        ]
+    },
+    {
+        "tag": "firmagob_34_tamaño_máximo_de_request",
+        "patterns": [
+            "¿Cuál es el tamaño máximo de un request?",
+            "límite de 5MB",
+            "el request no puede superar los 5 MB",
+            "tamaño máximo de request api",
+            "límite de tamaño de petición"
+        ],
+        "responses": [
+            "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! En relación a tu consulta, te informamos que el tamaño máximo permitido para todo el request no debe superar los 5 MB. Para cualquier consulta adicional o aclaración, no dudes en contactarnos. Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket Recuerde mantener comunicación con su Operador(a) o Coordinador(a) de Transformación Digital."
+        ]
+    },
+    {
+        "tag": "firmagob_35_información_firmagob-manuales",
+        "patterns": [
+            "¿Dónde encuentro los manuales de FirmaGob?",
+            "necesito el manual de FirmaGob",
+            "link a la biblioteca de manuales",
+            "dónde me inscribo para la capacitación de FirmaGob",
+            "información general de FirmaGob"
+        ],
+        "responses": [
+            "a continuación enviamos información referente a la plataforma FirmaGob: ¿Como utilizarla? https://firma.gob.cl/como-utilizarla/ Manuales: https://firma.gob.cl/biblioteca/manuales-firmagob/ Certificados https://firma.gob.cl/biblioteca/certificados/ Además le sugerimos inscribirse en la capacitación del producto: Enlace de inscripción de capacitación: https://gobdigital.cerofilas.gob.cl/etapas/ver/21355993/0 Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket Recuerde mantener comunicación con su Operador(a) o Coordinador(a) de Transformación Digital."
+        ]
+    },
+    {
+        "tag": "firmagob_36_derivación_al_poder_judicial",
+        "patterns": [
+            "Tengo una consulta sobre el Poder Judicial",
+            "¿Ustedes ven temas del Poder Judicial?",
+            "derivación al poder judicial",
+            "mi tema es del poder judicial",
+            "consulta poder judicial"
+        ],
+        "responses": [
+            "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! En relación a tu consulta, te informamos que este tema está fuera de nuestro alcance. Para cualquier otra consulta, no dudes en contactarnos. Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket Recuerde mantener comunicación con su Operador(a) o Coordinador(a) de Transformación Digital."
+        ]
+    },
+    {
+        "tag": "firmagob_37_documentos_a_firmar_con_firma_electrónica_avanzada",
+        "patterns": [
+            "¿Qué documentos requieren firma electrónica avanzada?",
+            "¿La firma avanzada es obligatoria?",
+            "¿Qué dice el Decreto Supremo 181 sobre la firma?",
+            "¿Cuándo debo usar firma avanzada y cuándo simple?",
+            "los contratos en licitaciones necesitan firma avanzada?"
+        ],
+        "responses": [
+            "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! En relación a tu consulta sobre el uso de firma electrónica avanzada, te informamos lo siguiente: De acuerdo con el Decreto Supremo 181, de 2022, en su artículo 39, inciso 2°, la firma electrónica avanzada será obligatoria para actos administrativos formalizados a través de documentos electrónicos. Esto incluye decretos, resoluciones, acuerdos de órganos colegiados, contratos y otros documentos que expresen la voluntad de un órgano o servicio público del Estado en ejercicio de sus potestades legales. Estos deben ser firmados exclusivamente con firma electrónica avanzada. Por ejemplo, actos como contratos en licitaciones públicas o acuerdos de órganos colegiados deben ser firmados con firma electrónica avanzada. Otros documentos, como aquellos que constituyen un instrumento público o producen los mismos efectos jurídicos, también requieren este tipo de firma. En caso contrario, para documentos que no se encuentren en este listado, será posible utilizar firma electrónica simple. Puedes consultar el Decreto Supremo 181 aquí: Decreto Supremo 181 - Ley 19.799. Para cualquier consulta adicional o aclaración, no dudes en contactarnos. Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket Recuerde mantener comunicación con su Operador(a) o Coordinador(a) de Transformación Digital."
+        ]
+    },
+    {
+        "tag": "firmagob_38_actualización_datos_de_usuario_desde_claveunica",
+        "patterns": [
+            "Mis datos de usuario están mal en FirmaGob",
+            "Mi nombre está mal, ¿cómo lo actualizo?",
+            "¿Se puede modificar el nombre y apellido en FirmaGob?",
+            "los datos se actualizan desde ClaveÚnica?",
+            "actualización automática de datos"
+        ],
+        "responses": [
+            "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! En relación a tu consulta, te informamos que los datos de nombres y apellidos no se pueden modificar una vez ingresados en la plataforma. Sin embargo, cuando un usuario ingresa por primera vez a FirmaGob con su ClaveÚnica, sus datos de nombres y apellidos se actualizarán automáticamente según la información obtenida desde ClaveÚnica. Para cualquier consulta adicional o aclaración, no dudes en contactarnos. Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket Recuerde mantener comunicación con su Operador(a) o Coordinador(a) de Transformación Digital."
+        ]
+    },
+    {
+        "tag": "firmagob_39_problemas_para_firmar_en_chilecompras_-_solicita_datos",
+        "patterns": [
+            "No puedo firmar en ChileCompras",
+            "Tengo problemas para firmar en Mercado Público",
+            "Error al firmar licitación en ChileCompras",
+            "qué datos necesitan para revisar error de ChileCompras",
+            "ayuda con firma en mercado público"
+        ],
+        "responses": [
+            "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! En relación a tu solicitud, te solicitamos amablemente los siguientes datos para poder brindarte la asistencia necesaria: RUT del Firmante. Fecha y Hora en que intentó firmar. Número de Licitación que intenta firmar. Si tienes alguna otra pregunta o necesitas más detalles, no dudes en contactarnos. Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket Recuerde mantener comunicación con su Operador(a) o Coordinador(a) de Transformación Digital."
+        ]
+    },
+    {
+        "tag": "firmagob_40_no_se_pueden_conectar_a_la_api_por_actualización_certificado_ssl",
+        "patterns": [
+            "No me puedo conectar a la API",
+            "Error de conexión a la API",
+            "¿Actualizaron el certificado SSL de la API?",
+            "me da un error de SSL",
+            "necesito el nuevo certificado SSL de la API"
+        ],
+        "responses": [
+            "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! En relación a tu consulta, te informamos que el problema reportado puede ser originado por una actualización del certificado SSL de la API de Firma. Si tu plataforma requiere este certificado dentro de su flujo interno, te recomendamos actualizarlo. Adjunto enviamos el certificado para que puedas incorporarlo. Si tienes alguna pregunta, no dudes en contactarnos. Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket Recuerde mantener comunicación con su Operador(a) o Coordinador(a) de Transformación Digital."
+        ]
+    },
+    {
+        "tag": "firmagob_41_cómo_operar_con_estados_financieros_de_contraloría",
+        "patterns": [
+            "¿Cómo firmo los estados financieros de Contraloría?",
+            "pasos para operar con estados financieros",
+            "qué necesito para firmar en Contraloría",
+            "se necesita OTP para los estados financieros",
+            "qué certificado uso para Contraloría"
+        ],
+        "responses": [
+            "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! En relación a tu consulta, te comentamos lo siguiente: Tu Institución debe encontrarse operando con FirmaGob. Debes contar con un certificado de Propósito General en la plataforma FirmaGob. Es necesario tener correctamente configurado tu OTP (segundo factor de autenticación) en el celular, ya que el sistema lo solicitará para poder firmar. contactarnos. Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket Recuerde mantener comunicación con su Operador(a) o Coordinador(a) de Transformación Digital."
+        ]
+    },
+    {
+        "tag": "firmagob_42_cambio_de_nombre_registro_civil",
+        "patterns": [
+            "Mi nombre está mal en ClaveÚnica",
+            "necesito rectificar mis datos en el Registro Civil",
+            "cómo cambio mi nombre en el Registro Civil",
+            "teléfono de ClaveÚnica para cambio de nombre",
+            "formulario de contacto del SRCeI"
+        ],
+        "responses": [
+            "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! Para solucionar tu consulta, el SRCeI ofrece dos opciones para la solicitud de rectificación de datos personales: Llamar al número de teléfono ClaveÚnica: 600 360 33 03. Completar el formulario de contacto disponible en este enlace: https://siac.srcei.cl/contacto/. Para más información sobre rectificación de datos, no dudes en contactarnos. Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket Recuerde mantener comunicación con su Operador(a) o Coordinador(a) de Transformación Digital."
+        ]
+    },
+    {
+        "tag": "firmagob_43_solicitud_de_evidencia",
+        "patterns": [
+            "Me están pidiendo evidencia de un problema",
+            "qué evidencia necesito enviar para un ticket",
+            "les tengo que mandar un pantallazo",
+            "qué datos envío para reportar un error",
+            "me piden el RUT y la fecha del error"
+        ],
+        "responses": [
+            "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! En relación a tu consulta, para poder atenderte mejor, te solicitamos que nos envíes la siguiente información: Evidencia del problema en una imagen o pantallazo que incluya la URL. RUT y Nombre de Usuario que presenta el problema. Plataforma en la cual se presenta el problema. Tipo de firma utilizada (Propósito general o desatendida). Fecha y Hora del problema. Quedamos a la espera de tu información. Si tienes alguna pregunta, no dudes en contactarte con nosotros. Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket Recuerde mantener comunicación con su Operador(a) o Coordinador(a) de Transformación Digital."
+        ]
+    },
+    {
+        "tag": "firmagob_44_firma_electrónica_para_empresa_privadas",
+        "patterns": [
+            "¿FirmaGob es para empresas privadas?",
+            "¿Una empresa privada puede usar FirmaGob?",
+            "soy una empresa, ¿puedo usar FirmaGob?",
+            "quién puede usar FirmaGob",
+            "FirmaGob es solo para el Estado"
+        ],
+        "responses": [
+            "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! En relación a tu consulta, te informamos que la Secretaría de Gobierno Digital tiene como misión coordinar y asesorar el uso estratégico de tecnologías digitales y datos públicos para mejorar la gestión de los órganos de la Administración del Estado. Dentro de este marco, hemos implementado la plataforma \"FirmaGob\", que facilita el uso de firmas electrónicas avanzadas, disponible exclusivamente para los órganos del Estado. Si tienes alguna pregunta, no dudes en contactarnos. Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket Recuerde mantener comunicación con su Operador(a) o Coordinador(a) de Transformación Digital."
+        ]
+    },
+    {
+        "tag": "firmagob_45_ips_pública_asociada_al_servicio_de_firmagob",
+        "patterns": [
+            "¿Cuáles son las IPs públicas de FirmaGob?",
+            "necesito las IPs de api.firma.digital.gob.cl",
+            "lista de IPs de AWS para FirmaGob",
+            "IPs de las 3 zonas de AWS",
+            "IPs del servicio FirmaGob"
+        ],
+        "responses": [
+            "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! En relación a tu consulta, te informamos que, con el objetivo de mejorar la eficiencia y la velocidad de acceso, hemos implementado tres zonas distintas para el dominio api.firma.digital.gob.cl. Estas zonas nos permiten gestionar el tráfico de manera más efectiva y ofrecer un servicio más rápido y confiable. A continuación, te proporcionamos las direcciones IP correspondientes: Zona 1: 34.209.21.143/32 Zona 2: 54.212.71.84/32 Zona 3: 52.10.21.2/32 Es importante mencionar que la administración de estas direcciones IP está a cargo de AWS, y cualquier modificación en ellas es gestionada de manera transparente. Si alguna IP no funciona en el futuro (por ejemplo, tras una actualización o nuevo despliegue de infraestructura), no dudes en contactarnos para proporcionarte nuevos valores. Si tienes alguna pregunta, no dudes en contactarnos. Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket Recuerde mantener comunicación con su Operador(a) o Coordinador(a) de Transformación Digital."
+        ]
+    },
+    {
+        "tag": "firmagob_46_evidencias_migración_aws-eks",
+        "patterns": [
+            "Tengo un error después de la migración a AWS-EKS",
+            "Error migración EKS",
+            "qué evidencia necesitan para el error de migración",
+            "me piden el request de firma y el ApiToken por el error de EKS",
+            "reportar error de AWS-EKS"
+        ],
+        "responses": [
+            "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! En relación a tu consulta, para poder brindarte una mejor atención, solicitamos que por favor nos envíes la siguiente información: Fecha y hora del error Log y/o mensaje de error Print de pantalla del error Información de la petición (una de las dos opciones al menos): Request de Firma Datos de Firma: RUT Firmante Entidad (Nombre exacto enviado) ApiToken Nombre de la aplicación (si se conoce) Quedamos atentos a la información solicitada. Si tienes alguna duda o consulta adicional, no dudes en contactarnos. Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket Recuerde mantener comunicación con su Operador(a) o Coordinador(a) de Transformación Digital."
+        ]
+    },
+    {
+        "tag": "firmagob_47_tramitar_convenio_de_municipalidades",
+        "patterns": [
+            "¿Cómo tramito el convenio para mi municipalidad?",
+            "link para tramitar convenio de municipalidad",
+            "dónde tramito el convenio en CeroFilas",
+            "pasos para el convenio de municipalidades",
+            "convenio municipalidad"
+        ],
+        "responses": [
+            "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! En relación a tu consulta, te informamos que para poder avanzar, debes tramitar el convenio en el siguiente enlace: https://gobdigital.cerofilas.gob.cl/tramites/informativo/2286, y seguir los pasos indicados en la plataforma. Si tienes alguna duda o consulta adicional, no dudes en contactarnos. Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket Recuerde mantener comunicación con su Operador(a) o Coordinador(a) de Transformación Digital."
+        ]
+    },
+    {
+        "tag": "firmagob_48_integrarse_a_sisrec",
+        "patterns": [
+            "¿Cómo me integro a SISREC?",
+            "duda sobre SISREC",
+            "pasos para integrarse a SISREC",
+            "qué es SISREC",
+            "info SISREC"
+        ],
+        "responses": [
+            "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! En relación a tu con Si tienes alguna pregunta adicional, no dudes en contactarnos. Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket Recuerde mantener comunicación con su Operador(a) o Coordinador(a) de Transformación Digital."
+        ]
+    },
+    {
+        "tag": "firmagob_49_se_deriva_a_poder_judicial",
+        "patterns": [
+            "¿Por qué mi consulta se deriva al Poder Judicial?",
+            "El Poder Judicial firma en su propia infraestructura?",
+            "mi consulta es del Poder Judicial",
+            "ustedes no ven temas del Poder Judicial?",
+            "Poder Judicial fuera de alcance"
+        ],
+        "responses": [
+            "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! En relación a tu consulta, te comentamos que, debido a que el Poder Judicial firma en su propia infraestructura. Si tienes alguna otra pregunta, no dudes en contactarnos. Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket Recuerde mantener comunicación con su Operador(a) o Coordinador(a) de Transformación Digital."
+        ]
+    },
+    {
+        "tag": "firmagob_50_formato_de_sucursal",
+        "patterns": [
+            "¿Qué es el formato de sucursal?",
+            "¿Cómo aplico el modelo sucursal?",
+            "¿Quién usa el modelo sucursal?",
+            "ejemplos de formato sucursal",
+            "duda sobre modelo sucursal"
+        ],
+        "responses": [
+            "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! En relación a tu consulta, te comentamos que para aplicar el modelo sucursal, debes seguir el procedimiento descrito en el archivo adjunto. Actualmente, dos instituciones operan con este modelo: Cámara de Diputados Poder Judicial Para más información sobre el modelo sucursal, revisa el procedimiento adjunto. Si tienes alguna pregunta, no dudes en contactarnos. Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket Recuerde mantener comunicación con su Operador(a) o Coordinador(a) de Transformación Digital."
+        ]
+    },
+    {
+        "tag": "firmagob_51_el_alcalde_subrogante_firma_convenio_en_proceso_de_elecciones",
+        "patterns": [
+            "¿Puede firmar el convenio un alcalde subrogante?",
+            "el alcalde subrogante puede firmar?",
+            "qué pasa con la firma del convenio en proceso de elecciones",
+            "firma de alcalde subrogante es válida?",
+            "el alcalde titular no está, puede firmar el subrogante?"
+        ],
+        "responses": [
+            "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! En relación a tu consulta, te informamos que efectivamente el Convenio puede ser firmado por el Alcalde subrogante. Luego, deben enviar los antecedentes nuevamente para actualizar el Convenio. Si tienes alguna pregunta, no dudes en contactarnos. Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket Recuerde mantener comunicación con su Operador(a) o Coordinador(a) de Transformación Digital."
+        ]
+    },
+    {
+        "tag": "firmagob_52_delegaciones_presidenciales",
+        "patterns": [
+            "Tengo una consulta de una Delegación Presidencial",
+            "¿Cómo gestionan la firma las Delegaciones Presidenciales?",
+            "con quién contacto para Delegaciones Presidenciales",
+            "duda sobre Delegación Presidencial",
+            "División de Gobierno Interior"
+        ],
+        "responses": [
+            "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! En relación a tu consulta, te informamos que para el caso particular de las Delegaciones Presidenciales, debes contactar a la División de Gobierno Interior para gestionar la entrega de firma electrónica avanzada. Si tienes alguna pregunta, no dudes en contactarnos. Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket Recuerde mantener comunicación con su Operador(a) o Coordinador(a) de Transformación Digital."
+        ]
+    },
+    {
+      "tag": "docdigital_01__plantilla_base_doc_digital",
+      "patterns": [
+        "¿Qué es la Plantilla Base Doc Digital?",
+        "dónde encuentro la plantilla base de doc digital",
+        "para qué sirve la plantilla base",
+        "necesito la plantilla de doc digital",
+        "información sobre plantilla base doc digital"
+      ],
+      "responses": [
+        "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! En relación a tu consulta, te informamos que [Respuesta Faltante en el Original]. Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket. Recuerde mantener comunicación con su Administrador(a) y Coordinador de Transformación Digital."
+      ]
+    },
+    {
+      "tag": "docdigital_02__error_masivo_doc_digital",
+      "patterns": [
+        "¿Hay un error masivo en Doc Digital?",
+        "la plataforma está caída",
+        "se cayó doc digital",
+        "estamos enfrentando un error masivo",
+        "problema general en la plataforma"
+      ],
+      "responses": [
+        "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! En relación a tu consulta, te informamos que efectivamente estamos enfrentando un error masivo en la plataforma. Nos encontramos trabajando para resolver esta situación lo antes posible. Lamentamos los inconvenientes que esto pueda estar causando y agradecemos tu comprensión mientras avanzamos en la solución. Si tienes más preguntas o necesitas seguimiento, no dudes en contactarnos. Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket. Recuerde mantener comunicación con su Administrador(a) y Coordinador de Transformación Digital."
+      ]
+    },
+    {
+      "tag": "docdigital_03__pauta_de_evaluacin_e_integracin_de_gestor_documental_a_doc_digital",
+      "patterns": [
+        "¿Qué es la Pauta de Evaluación de Sistemas de Gestión de Documentos?",
+        "cómo integro un gestor documental con Doc Digital",
+        "puedo integrar mi gestor documental con FirmaGob y ClaveÚnica",
+        "mi plataforma externa necesita operar en gob.cl",
+        "info pauta de evaluación gestor documental"
+      ],
+      "responses": [
+        "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! En relación a tu consulta, te informamos que la Pauta de Evaluación de Sistemas de Gestión de Documentos y Expedientes Electrónicos (adjunto) se desarrolló para apoyar a los Órganos de la Administración del Estado (OAE) en procesos de desarrollo, evaluación o licitación de plataformas de gestión documental. Este año, la Secretaría de Gobierno Digital (SGD) avanzará en: Pilotos de soluciones útiles para OAE. Habilitación de servicios básicos del ámbito de SGD. Transferencia de directrices técnicas a proveedores y OAE. Sobre plataformas externas: Es posible integrarlas con FirmaGob, ClaveÚnica y DocDigital. Por directrices de seguridad, deben operar en el dominio gob.cl (excepto para uso interno). La integración con otros dominios podría autorizarse en observación, sin impedimentos tecnológicos. Si necesitas más información, estamos a tu disposición. Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket. Recuerde mantener comunicación con su Administrador(a) y Coordinador de Transformación Digital."
+      ]
+    },
+    {
+      "tag": "docdigital_04__habilitacin_nueva_institucin_o_entidad",
+      "patterns": [
+        "¿Cómo habilito una nueva institución en DocDigital?",
+        "Mi municipalidad ya está habilitada, ¿cuáles son los links?",
+        "link de producción y pruebas de docdigital",
+        "cómo gestiono los usuarios después de la habilitación",
+        "quién designa la Oficina de Partes"
+      ],
+      "responses": [
+        "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! En relación a tu consulta, te informamos que la Municipalidad de XXXXXXX ya se encuentra habilitada en las siguientes plataformas: Producción: https://doc.digital.gob.cl/ Pruebas: https://docv3.cert.digital.gob.cl/ El administrador principal puede ingresar con su ClaveÚnica y gestionar usuarios según los roles disponibles: Administradores(as) Usuarios(as) Generales Usuarios(as) Oficina de Partes Te recomendamos asignar administradores suplentes con permisos idénticos para garantizar la continuidad operacional. Es fundamental que designen el rol de Oficina de Partes para recibir comunicaciones oficiales. Por favor, revisa el video de capacitación en el siguiente enlace: https://www.youtube.com/watch?v=-f_BrBetSYY&t=4484s Además, consulten las capacitaciones disponibles para su institución en: https://gobdigital.cerofilas.gob.cl/tramites/informativo/2785 Si tienes más preguntas o necesitas seguimiento, no dudes en contactarnos. Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket. Recuerde mantener comunicación con su Administrador(a) y Coordinador de Transformación Digital."
+      ]
+    },
+    {
+      "tag": "docdigital_05__inscripcin_a_capacitacin_doc_digital",
+      "patterns": [
+        "¿Cómo me inscribo a la capacitación de Doc Digital?",
+        "link para inscribirme a la capacitación",
+        "dónde veo las fechas de las capacitaciones de DocDigital",
+        "no aparecen fechas para la capacitación",
+        "quiero capacitarme en docdigital"
+      ],
+      "responses": [
+        "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! En relación a tu consulta sobre las capacitaciones de DocDigital, te informamos que para inscribirte deberás ingresar con tu ClaveÚnica en el siguiente enlace: https://gobdigital.cerofilas.gob.cl/ Una vez dentro, selecciona: DocDigital versión 3 - Próxima capacitación. (Si no aparece una fecha disponible, te sugerimos volver a intentar en unos días, ya que el equipo habilitará nuevas fechas próximamente). Si tienes más preguntas, no dudes en contactarnos. Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket. Recuerde mantener comunicación con su Administrador(a) y Coordinador de Transformación Digital."
+      ]
+    },
+    {
+      "tag": "docdigital_06__links_api_docdigital",
+      "patterns": [
+        "¿Cuáles son los links de la API de DocDigital?",
+        "dónde está la documentación de la API de DocDigital",
+        "necesito la documentación del servicio de la API",
+        "links API DocDigital",
+        "documento de introducción API DocDigital"
+      ],
+      "responses": [
+        "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! En relación a tu consulta, a continuación, te compartimos algunos enlaces para acceder a la API de DocDigital: Documento de introducción (Adjunto) Certificación de Integraciones para API DocDigital Documentación del Servicio Si necesitas más información, no dudes en contactarnos. Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket. Recuerde mantener comunicación con su Administrador(a) y Coordinador de Transformación Digital."
+      ]
+    },
+    {
+      "tag": "docdigital_07__revisin_paso_a_produccin_api",
+      "patterns": [
+        "¿Qué necesito para el paso a producción de la API?",
+        "requisitos para aprobar el paso a producción",
+        "qué información necesitan para el pase a producción",
+        "json del caso de uso de envío de documentos",
+        "volumen estimado de documentos mensuales"
+      ],
+      "responses": [
+        "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! Para aprobar el paso a producción, requerimos la siguiente información: Json del caso de uso de envío de documentos. Documentos con la evidencia de ejecución exitosa de los métodos probados (capturas de pantalla). Capturas de pantallas de lo que se visualiza en DemoDoc. Indicar el volumen estimado de documentos mensuales que pretende cargar la institución. Informar direcciones públicas de salida, para ser agregadas al whitelist de IPs autorizadas. Si tienes alguna pregunta, no dudes en contactarte con nosotros. Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket. Recuerde mantener comunicación con su Administrador(a) y Coordinador de Transformación Digital."
+      ]
+    },
+    {
+      "tag": "docdigital_08__para_revisar_problemas_de_api",
+      "patterns": [
+        "Tengo un problema con la API de DocDigital",
+        "¿Qué datos necesitan para revisar un error de la API?",
+        "cómo reporto un error de la API de DocDigital",
+        "me piden las credenciales de la API para un error",
+        "necesito enviar el Json enviado a la API"
+      ],
+      "responses": [
+        "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! Para revisar el problema reportado y ayudarte de mejor manera, necesitamos la siguiente información: Credenciales de la API utilizada. URL de la API que se está utilizando. Método utilizado. Json enviado a la API. Si tienes alguna pregunta, no dudes en contactarte con nosotros. Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket. Recuerde mantener comunicación con su Administrador(a) y Coordinador de Transformación Digital."
+      ]
+    },
+    {
+      "tag": "docdigital_09__en_caso_de_problemas_de_api_nivel_3",
+      "patterns": [
+        "¿Qué es un problema de API Nivel 3?",
+        "cómo reporto un error de Nivel 3",
+        "me piden el nombre de la entidad y la bandeja con error",
+        "qué información envío para un error de API Nivel 3",
+        "necesitan imagen del error y nombre de usuario"
+      ],
+      "responses": [
+        "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! En relación a tu solicitud, para atenderla de mejor manera, requerimos la siguiente información: Nombre de usuario Nombre de la entidad Bandeja con error y hora (idealmente, una imagen del error) Lo anterior nos permitirá revisar los logs de la plataforma, replicar el error y determinar una solución. Si tienes alguna pregunta, no dudes en contactarte con nosotros. Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket. Recuerde mantener comunicación con su Administrador(a) y Coordinador de Transformación Digital."
+      ]
+    },
+    {
+      "tag": "docdigital_10__gestin_de_usuarios_demo_y_produccin",
+      "patterns": [
+        "¿Quién gestiona los usuarios en DocDigital?",
+        "¿Cómo creo un usuario en demo?",
+        "¿Los usuarios de demo y producción son separados?",
+        "cómo doy de alta o baja un usuario",
+        "necesito dos suplentes para la gestión"
+      ],
+      "responses": [
+        "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! En relación a tu solicitud, para realizar la gestión de usuarios (altas, bajas, cambio de permisos) debes dirigirte al Administrador(a) de la plataforma DocDigital en tu institución. Recuerda que los usuarios se crean tanto en DEMODOC como en Producción DocDigital de forma separada. Además, tu institución debe contar con al menos dos suplentes para la gestión de la plataforma. Si tienes alguna pregunta, no dudes en contactarte con nosotros. Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket. Recuerde mantener comunicación con su Administrador(a) y Coordinador de Transformación Digital."
+      ]
+    },
+    {
+      "tag": "docdigital_11__error_replicado_estamos_trabajando_para_ud",
+      "patterns": [
+        "Me dijeron 'Error Replicado, estamos trabajando para Ud'",
+        "¿Qué significa que el error fue replicado?",
+        "mi error fue replicado, ¿cuándo lo solucionan?",
+        "están trabajando en mi error",
+        "Error Replicado"
+      ],
+      "responses": [
+        "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! Primero, agradecemos tu comprensión por los inconvenientes causados. Hemos replicado el error reportado y nos encontramos trabajando en la solución del problema. Te mantendremos informado sobre el progreso de la solución. Si tienes alguna pregunta, no dudes en contactarte con nosotros. Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket. Recuerde mantener comunicación con su Administrador(a) y Coordinador de Transformación Digital."
+      ]
+    },
+    {
+      "tag": "docdigital_12__solicitud_de_evidencias",
+      "patterns": [
+        "Me piden evidencia para un ticket de DocDigital",
+        "qué evidencia necesito enviar para un problema",
+        "necesitan pantallazo con la URL",
+        "me piden el RUT y nombre del documento con error",
+        "reportar error en DEMO o Producción"
+      ],
+      "responses": [
+        "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! Para atender de mejor manera lo indicado, necesitamos que nos envíes la siguiente información: Evidencia del problema en una imagen o pantallazo que incluya la URL. RUT y Nombre de Usuario que presenta el problema. Fecha y Hora del problema. Nombre del Documento. Plataforma en la que se trabaja (DEMO o Producción). Quedamos a la espera de lo solicitado. Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket. Recuerde mantener comunicación con su Administrador(a) y Coordinador de Transformación Digital."
+      ]
+    },
+    {
+      "tag": "docdigital_13__notificacin_y_al_momento_de_ingresar_no_se_puede_ver_visador",
+      "patterns": [
+        "Me llegó una notificación para visar pero no veo el documento",
+        "¿Por qué no puedo ver el documento pendiente de visado?",
+        "desapareció mi documento para visar",
+        "el firmante firmó antes que yo visara",
+        "otro visador rechazó el documento"
+      ],
+      "responses": [
+        "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! En relación a tu consulta, te informamos que en caso de que recibas una notificación pero no puedas visualizarla al ingresar a la plataforma, las posibles razones son las siguientes: El documento fue eliminado por el administrador (aunque haya sido visado por otro visador). El visador era opcional y el firmante firmó antes de que el visador tuviera la oportunidad de ingresar. Otro visador en la lista rechazó el documento. Si tienes más preguntas, no dudes en contactarte con nosotros. Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket. Recuerde mantener comunicación con su Administrador(a) y Coordinador de Transformación Digital."
+      ]
+    },
+    {
+      "tag": "docdigital_14__lentitud_en_plataforma_docdigital_por_alta_demanda",
+      "patterns": [
+        "DocDigital está muy lento",
+        "La plataforma DocDigital está lenta",
+        "¿Por qué hay lentitud en DocDigital?",
+        "la plataforma se pega en horarios punta",
+        "problemas de rendimiento en DocDigital"
+      ],
+      "responses": [
+        "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! En relación a tu consulta sobre la lentitud registrada en la plataforma DocDigital, te informamos que este comportamiento suele ocurrir durante ciertos horarios debido a la alta demanda. Lamentamos las molestias ocasionadas, pero ya se están tomando medidas para mejorar los tiempos de respuesta. Si tienes alguna pregunta, no dudes en contactarte con nosotros. Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket. Recuerde mantener comunicación con su Administrador(a) y Coordinador de Transformación Digital."
+      ]
+    },
+    {
+      "tag": "docdigital_15__cmo_activar_la_subrogancia",
+      "patterns": [
+        "¿Cómo activo la subrogancia en DocDigital?",
+        "pasos para asignar un subrogante",
+        "cómo activo el modo 'Fuera de Oficina'",
+        "el subrogante puede gestionar Oficina de Partes?",
+        "solo puedo tener 1 subrogante"
+      ],
+      "responses": [
+        "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! En relación a tu consulta sobre cómo asignar un subrogante como Administrador de Doc Digital en tu entidad, te dejamos a continuación los pasos detallados: Accede a la bandeja de usuarios de tu institución en el menú lateral. Busca al usuario al que asignarás el subrogante y haz click en \"EDITAR\" (acciones). Adiciona un subrogante (solo se permite 1 subrogante). Ingresa el nombre del subrogante (debe estar previamente creado en la plataforma). Haz click en \"EDITAR USUARIO\" y confirma el cambio. Recuerda que, cuando el usuario subrogado se ausente, debes activar la opción \"Fuera de Oficina\". Al regresar, desactívala. Recuerde que en Doc Digital el subrogante solo puede visar o firmar en nombre del subrogado, cuando este activa la subrogancia, NO están includos los procesos de Oficina de Partes , si las comunicaciones llegaron a la OP, cualquier usuario que tenga perfil OP puede gestionarlas. Si las comunicaciones llegaron a un usuarios específico no se traspasan al activar la subrogancia. Si tienes alguna pregunta, no dudes en contactarte con nosotros. Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket. Recuerde mantener comunicación con su Administrador(a) y Coordinador de Transformación Digital."
+      ]
+    },
+    {
+      "tag": "docdigital_16__firma_de_subrogante_y_su_gestin",
+      "patterns": [
+        "¿Cómo firma el subrogante?",
+        "¿Qué nombre aparece en la firma del subrogante?",
+        "¿Qué significa la (S) en la firma?",
+        "¿Puede un subrogante tener un subrogante?",
+        "¿Qué pasa con los documentos firmados por el subrogante cuando vuelvo?"
+      ],
+      "responses": [
+        "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! En relación a tu consulta sobre el proceso de subrogancia, te informamos que: Cuando un usuario subrogue las acciones de firma, el documento llevará el pie de firma con el nombre del subrogante, el cargo del subrogado y la indicación \"(S)\" para señalar que es en modalidad subrogada. Para realizar la gestión de usuarios, en este caso la subrogancia, debes dirigirte al Administrador(a) de la plataforma DocDigital en tu Institución. Recuerda que no existe un subrogante de un subrogante, por lo que si el subrogante no está disponible, debes tomar precauciones. Los documentos firmados en ausencia del titular por el subrogante se devolverán a la bandeja de firmados del subrogado con la firma del subrogante. Cuando el titular desactiva la subrogancia, todos los documentos firmados por el subrogante regresan a la bandeja de \"Firmados\" del titular, con la firma del subrogante. Mientras un usuario esté fuera de oficina (subrogancia activa), todas las opciones del menú lateral estarán bloqueadas, lo que impide que se firme o vise documentos. Si tienes alguna pregunta, no dudes en contactarte con nosotros. Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket. Recuerde mantener comunicación con su Administrador(a) y Coordinador de Transformación Digital."
+      ]
+    },
+    {
+      "tag": "docdigital_17__documentos_reservados",
+      "patterns": [
+        "¿Qué es un documento reservado en DocDigital?",
+        "¿Quién puede ver documentos reservados?",
+        "¿La Oficina de Partes puede ver documentos reservados?",
+        "¿Cómo activo el permiso 'Ver Reservados'?",
+        "los anexos también pueden ser reservados"
+      ],
+      "responses": [
+        "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! En relación a tu consulta sobre los documentos reservados, te informamos que: Si indicas que el documento es reservado, solo será visible para el creador, visador, firmante y destinatario. Los documentos anexos también pueden ser marcados como reservados, y solo serán visibles para el creador, visador, firmante y destinatario. El usuario de Oficina de Partes podrá visualizar la comunicación, pero no podrá ver los documentos o anexos reservados, a menos que tenga activo el permiso “Ver Reservados”. El Administrador Principal es el único rol que puede activar el permiso “Ver Reservados”. Si tienes alguna pregunta, no dudes en contactarte con nosotros. Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket. Recuerde mantener comunicación con su Administrador(a) y Coordinador de Transformación Digital."
+      ]
+    },
+    {
+      "tag": "docdigital_18__actualizacin_de_nombres_desde_clave_nica",
+      "patterns": [
+        "Mi nombre está mal en DocDigital",
+        "¿Cómo actualizo mi nombre en DocDigital?",
+        "¿Los datos de DocDigital se actualizan solos desde Clave Única?",
+        "el administrador puede cambiar mi nombre en DocDigital",
+        "actualización de nombres por Clave Única"
+      ],
+      "responses": [
+        "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! En relación a tu consulta, te informamos que al ingresar por primera vez al sistema DocDigital, este realizará automáticamente la actualización de datos obtenidos desde ClaveÚnica (Registro Civil), por lo que no es necesario realizar cambios dentro de la plataforma. Además, el administrador de la misma no podrá hacer modificaciones de este tipo, ya que la opción no está disponible. Si tienes alguna pregunta, no dudes en contactarte con nosotros. Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket. Recuerde mantener comunicación con su Administrador(a) y Coordinador de Transformación Digital."
+      ]
+    },
+    {
+      "tag": "docdigital_19__doc_digital_como_gestor_documental",
+      "patterns": [
+        "¿DocDigital es un gestor documental?",
+        "¿Puedo usar DocDigital para almacenar todos mis archivos?",
+        "¿DocDigital sirve para rastrear documentos internos?",
+        "necesito un gestor documental, ¿me sirve DocDigital?",
+        "DocDigital es solo para comunicación entre instituciones"
+      ],
+      "responses": [
+        "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! En relación a tu consulta, lamentamos informarte que DocDigital está diseñado únicamente para la comunicación entre instituciones y no funciona como un gestor documental. Por lo tanto, no es posible almacenar, gestionar, controlar ni rastrear el flujo de documentos electrónicos de una institución. Agradecemos tu comprensión. Si tienes alguna pregunta, no dudes en contactarte con nosotros. Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket. Recuerde mantener comunicación con su Administrador(a) y Coordinador de Transformación Digital."
+      ]
+    },
+    {
+      "tag": "docdigital_20__cual_es_la_ley_que_mandata_el_uso_y_que_es_doc_digital",
+      "patterns": [
+        "¿Qué es DocDigital?",
+        "¿Qué ley obliga a usar DocDigital?",
+        "Ley de Transformación Digital N° 21.180",
+        "¿DocDigital es la plataforma oficial?",
+        "¿DocDigital usa Clave Única y FirmaGob?"
+      ],
+      "responses": [
+        "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! En relación a tu consulta, te informamos que, en el marco de la Ley de Transformación Digital N° 21.180, los Órganos de la Administración del Estado deben registrar las comunicaciones oficiales que realicen a otros órganos mediante una plataforma digital. DocDigital es la plataforma oficial para el envío y recepción de documentos electrónicos como oficios, resoluciones y cartas, entre otros. Integra herramientas como Clave Única y Firma Electrónica Avanzada (FirmaGob) para garantizar la legalidad de los documentos. Si tienes alguna pregunta, no dudes en contactarte con nosotros. Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket. Recuerde mantener comunicación con su Administrador(a) y Coordinador de Transformación Digital."
+      ]
+    },
+    {
+      "tag": "docdigital_21__proceso_de_enumeracin",
+      "patterns": [
+        "¿Cómo funciona el proceso de enumeración en DocDigital?",
+        "¿Qué es el folio en DocDigital?",
+        "¿Puede haber un folio duplicado?",
+        "¿Qué es el ID único de un documento?",
+        "la oficina de partes puede devolver un documento duplicado"
+      ],
+      "responses": [
+        "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! En relación a tu consulta, te informamos lo siguiente: El proceso de enumeración de documentos en DocDigital permite agregar técnicamente una firma adicional a un documento que no esté sellado. En cuanto al folio, este es un número interno que cada servicio organiza de acuerdo con su propia estructura, y puede coincidir entre diferentes instituciones. Además, DocDigital cuenta con un campo alfanumérico sin restricciones para el folio y un ID único para cada documento, permitiendo su correcta diferenciación. En caso de duplicidad, tu Oficina de Partes tiene la posibilidad de devolver el documento. Si tienes alguna pregunta, no dudes en contactarte con nosotros. Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket. Recuerde mantener comunicación con su Administrador(a) y Coordinador de Transformación Digital."
+      ]
+    },
+    {
+      "tag": "docdigital_22__prxima_capacitacin_doc_digital_respuesta_cuando_no_hay_fecha_definida",
+      "patterns": [
+        "¿Cuándo es la próxima capacitación de DocDigital?",
+        "No hay fechas para la capacitación de DocDigital",
+        "Quiero inscribirme a la capacitación pero no hay fecha",
+        "avísenme de la próxima capacitación",
+        "no hay fecha confirmada para capacitación"
+      ],
+      "responses": [
+        "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! En relación a tu consulta, te informamos que en este momento no tenemos una fecha confirmada para la próxima capacitación de DocDigital. Te invitamos a revisar regularmente https://gobdigital.cerofilas.gob.cl/ para actualizaciones. Si tienes alguna pregunta, no dudes en contactarte con nosotros. Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket. Recuerde mantener comunicación con su Administrador(a) y Coordinador de Transformación Digital."
+      ]
+    },
+    {
+      "tag": "docdigital_23__rechazo_de_comunicacin",
+      "patterns": [
+        "Me rechazaron una comunicación, ¿a quién le llega la notificación?",
+        "¿Por qué me rechazaron un documento?",
+        "¿Qué significa un rechazo de comunicación?",
+        "el documento estaba mal dirigido",
+        "hablar con oficina de partes por rechazo"
+      ],
+      "responses": [
+        "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! En relación a tu consulta, te informamos que la notificación de rechazo será enviada al creador(a) del documento. Consideramos que podría ser útil comunicarte con la Oficina de Partes (OP) de destino para consultar la razón del rechazo. Un \"rechazo\" generalmente ocurre cuando el documento está mal dirigido al servicio o tiene alguna inconsistencia o falta de documento. Si tienes alguna pregunta, no dudes en contactarte con nosotros. Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket. Recuerde mantener comunicación con su Administrador(a) y Coordinador de Transformación Digital."
+      ]
+    },
+    {
+      "tag": "docdigital_24__problema_reportado_ya_solucionado",
+      "patterns": [
+        "Me dijeron que mi problema ya está solucionado",
+        "confirmación de que el problema se solucionó",
+        "ticket solucionado",
+        "ya arreglaron el problema que reporté",
+        "problema resuelto"
+      ],
+      "responses": [
+        "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! En relación a tu consulta, hemos revisado tu evidencia y podemos confirmar que el problema ya se encuentra solucionado. Agradecemos tu comprensión y te pedimos disculpas por los inconvenientes causados. Si tienes alguna pregunta, no dudes en contactarte con nosotros. Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket. Recuerde mantener comunicación con su Administrador(a) y Coordinador de Transformación Digital."
+      ]
+    },
+    {
+      "tag": "docdigital_25_procedimiento_de_escalamiento_para_reportar_yo_escalar_incidentes_a_meas_de_ayuda",
+      "patterns": [
+        "¿Cómo escalo un incidente?",
+        "¿Cuál es el procedimiento para reportar un ticket?",
+        "¿Cuál es el horario de atención de la mesa de ayuda?",
+        "link para ingresar un ticket",
+        "horarios de atención para incidentes"
+      ],
+      "responses": [
+        "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! En relación a tu consulta, te informamos que el procedimiento de escalamiento para reportar y/o escalar incidentes consiste en ingresar un ticket a la mesa de ayuda a través de la siguiente URL: https://digital.gob.cl/mesadeayuda Los horarios de atención para la resolución de incidentes son los siguientes: Lunes a Jueves de 8:30 a 17:30 horas Viernes de 8:30 a 16:30 horas Si tienes alguna pregunta, no dudes en contactarte con nosotros. Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket. Recuerde mantener comunicación con su Administrador(a) y Coordinador de Transformación Digital."
+      ]
+    },
+    {
+      "tag": "docdigital_26_proceso_de_visacin",
+      "patterns": [
+        "¿Cómo funciona el proceso de visación?",
+        "¿Qué es la visación opcional?",
+        "¿Qué es la visación en cadena de responsabilidad?",
+        "diferencia entre visación opcional y en cadena",
+        "qué pasa si el firmante firma antes que el visador opcional"
+      ],
+      "responses": [
+        "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! En relación a tu consulta, te informamos que, en general, debes seleccionar el tipo de visación que aplica para el documento. Las opciones son: No requiere visación: Se envía directo a los firmantes. Visación opcional: Los visadores pueden dar su visación si lo desean. En caso de rechazo, el documento continúa su flujo. Enviar en cadena de responsabilidad: Todos los visadores deben dar su visación positiva para enviar a los firmantes. Luego, debes agregar los visadores y asignar un orden utilizando listas (jerarquía horizontal y vertical). Para más detalles, revisa la documentación sobre visadores aquí: https://manualesdocdigital.s3-us-west-2.amazonaws.com/Visador.pdf. Finalmente informar que si la visación es \"sin visación \" o \"opcional\" si concurre antes el firmante y \"firma\" el estado cambia automáticamente quedando \"autocompletada\", con lo cual desaparecerán de la bandeja de pendientes de recepción. Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket. Recuerde mantener comunicación con su Administrador(a) y Coordinador de Transformación Digital."
+      ]
+    },
+    {
+      "tag": "docdigital_27__notifica_documento_pendiente_para_visar_dd3",
+      "patterns": [
+        "Me llegó una notificación de documento pendiente para visar",
+        "¿Quién recibe el correo de pendiente para visar?",
+        "¿Por qué no me llegan los correos de visación?",
+        "la notificación de visación se envía al correo registrado",
+        "correo no-reply@digital.gob.cl está bloqueado"
+      ],
+      "responses": [
+        "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! En relación a tu consulta, te informamos que la notificación con el detalle del documento a visar debe ser recibida por los usuarios designados como visadores, en el orden correspondiente. En el caso de una solicitud de visación en cadena de responsabilidad, el mensaje se genera a medida que el usuario asignado va liberando el documento. Si es una visación opcional, el mensaje se envía simultáneamente a todos los usuarios asignados al inicio del proceso. La notificación se enviará al correo registrado en la plataforma. Recuerda verificar con tu equipo de informática que el correo no-reply@digital.gob.cl esté en tus listas blancas y no bloqueado. Si tienes alguna otra consulta, no dudes en contactarnos. Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket. Recuerde mantener comunicación con su Administrador(a) y Coordinador de Transformación Digital."
+      ]
+    },
+    {
+      "tag": "docdigital_28__notifica_rechazo_por_visador_dd3",
+      "patterns": [
+        "Me llegó una notificación de rechazo por visador",
+        "¿Qué pasa si un visador rechaza el documento?",
+        "¿Quién recibe el correo de rechazo de visación?",
+        "no me llegan los correos de rechazo",
+        "el visador rechazó el documento"
+      ],
+      "responses": [
+        "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! En relación a tu consulta, te informamos que la notificación con el detalle del documento a visar debe ser recibida por los usuarios designados como visadores, en el orden correspondiente. En el caso de una solicitud de visación en cadena de responsabilidad, el mensaje se genera a medida que el usuario asignado va liberando el documento. Si es una visación opcional, el mensaje se envía simultáneamente a todos los usuarios asignados al inicio del proceso. La notificación se enviará al correo registrado en la plataforma. Recuerda verificar con tu equipo de informática que el correo no-reply@digital.gob.cl esté en tus listas blancas y no bloqueado. Para más información sobre el proceso de visación, revisa la documentación en este enlace. Si tienes alguna otra consulta, no dudes en contactarnos. Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket. Recuerde mantener comunicación con su Administrador(a) y Coordinador de Transformación Digital."
+      ]
+    },
+    {
+      "tag": "docdigital_29__notifica_documento_pendiente_para_firmar_dd3",
+      "patterns": [
+        "Me llegó un correo de documento pendiente para firmar",
+        "¿Quién recibe la notificación de firma pendiente?",
+        "no me llegan los correos de firma",
+        "aviso de documento pendiente para firmar",
+        "correo no-reply@digital.gob.cl bloqueado"
+      ],
+      "responses": [
+        "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! En relación a tu consulta, te informamos que este correo debe ser recibido por los usuarios designados como firmantes, en el orden correspondiente. Si es una solicitud de firma en cadena, el mensaje se enviará conforme los usuarios vayan liberando el documento. Si se trata de una firma sin dependencia, el mensaje se enviará simultáneamente a todos los usuarios asignados al inicio del proceso de firma. La notificación será enviada al correo registrado en la plataforma. Recuerda verificar con tu equipo de informática que el correo no-reply@digital.gob.cl esté en tus listas blancas y no bloqueado. Si tienes alguna pregunta, no dudes en contactarte con nosotros. Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket. Recuerde mantener comunicación con su Administrador(a) y Coordinador de Transformación Digital."
+      ]
+    },
+    {
+      "tag": "docdigital_30__notifica_que_una_comunicacin_ha_sido_enviada_por_ops_dd3",
+      "patterns": [
+        "Notificación 'Comunicación enviada por OPS'",
+        "¿Quién recibe el correo de envío de OPS?",
+        "Me llegó un correo 'Comunicación enviada por DocDigital'",
+        "el creador del proceso recibe la notificación de envío?",
+        "aviso de envío de Oficina de Partes"
+      ],
+      "responses": [
+        "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! En relación a tu consulta, te informamos que la notificación de que una comunicación ha sido enviada por OPS debe ser recibida por el usuario creador del proceso. El asunto del correo será \"Comunicación enviada por DocDigital\" y deberá incluir el detalle de la comunicación, el nombre de la OPS, folio y fecha, así como las entidades destinatarias. Además, incluirá un enlace a la URL para acceder a la comunicación enviada. La notificación será enviada al correo registrado en la plataforma. Si no la recibes, por favor verifica con el área de tecnología de tu institución o con el Coordinador/a de Transformación Digital para revisar las políticas de seguridad respecto a los correos provenientes de no-reply@digital.gob.cl. Si tienes alguna pregunta, no dudes en contactarte con nosotros. Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket. Recuerde mantener comunicación con su Administrador(a) y Coordinador de Transformación Digital."
+      ]
+    },
+    {
+      "tag": "docdigital_31__notifica_rechazo_por_firmante_dd3",
+      "patterns": [
+        "¿Qué pasa si un firmante rechaza el documento?",
+        "Notificación de 'Documento rechazado por firmante'",
+        "¿Quién recibe el correo de rechazo de firma?",
+        "el documento vuelve al creador si un firmante lo rechaza",
+        "un firmante rechazó mi documento"
+      ],
+      "responses": [
+        "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! En relación a tu consulta, te informamos que este correo debe ser recibido por el usuario/a creador del proceso, así como los visadores/firmantes previos. El asunto de la notificación será \"Documento rechazado por firmante en DocDigital\". En el contenido se detallará el documento, quién ha rechazado, la fecha y el motivo. Posteriormente, el documento será enviado a quien inició la tramitación para que lo corrija y reinicie la gestión. La notificación será enviada al correo registrado en la plataforma. Si no la recibes, por favor verifica con el área de tecnología de tu institución o con el Coordinador/a de Transformación Digital para revisar las políticas de seguridad sobre correos provenientes de no-reply@digital.gob.cl. Si tienes alguna pregunta, no dudes en contactarte con nosotros. Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket. Recuerde mantener comunicación con su Administrador(a) y Coordinador de Transformación Digital."
+      ]
+    },
+    {
+      "tag": "docdigital_32__notifica_rechazo_por_parte_de_la_oficina_de_partes_entrante_dd3",
+      "patterns": [
+        "La oficina de partes de destino rechazó mi documento",
+        "Notificación de rechazo de OP entrante",
+        "¿Quién recibe el rechazo de la oficina de partes destinataria?",
+        "asunto 'Comunicación rechazada por Oficina de Partes Destinataria'",
+        "me rechazó la OP de destino, ¿tengo que iniciar de nuevo?"
+      ],
+      "responses": [
+        "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! En relación a tu consulta, te informamos que la Notificación de rechazo por parte de la Oficina de Partes Entrante debe ser recibida por el usuario creador de la comunicación y al correo de la Oficina de Partes de origen (si está registrado en el sistema). El asunto será \"Comunicación rechazada por Oficina de Partes Destinataria\". En el contenido, se incluirá el detalle del rechazo, el motivo y un link al documento. Si es necesario corregir la situación, debe iniciar una nueva tramitación de comunicación. La notificación será enviada al correo registrado en la plataforma. Si no la recibes, por favor verifica con el área de tecnología de tu institución o el Coordinador/a de Transformación Digital sobre las políticas de seguridad de correos provenientes de no-reply@digital.gob.cl. Si tienes alguna pregunta, no dudes en contactarte con nosotros. Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket. Recuerde mantener comunicación con su Administrador(a) y Coordinador de Transformación Digital."
+      ]
+    },
+    {
+      "tag": "docdigital_33__notifica_rechazo_de_oficina_de_partes_de_origen_dd3",
+      "patterns": [
+        "La oficina de partes de origen rechazó mi documento",
+        "Notificación de rechazo de OP saliente",
+        "¿Por qué mi propia oficina de partes rechazó el documento?",
+        "asunto 'Comunicación rechazada en DocDigital por oficina de partes saliente'",
+        "el rechazo de mi OP me llega a mí?"
+      ],
+      "responses": [
+        "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! En relación a tu consulta, te informamos que la Notificación de rechazo de la Oficina de Partes de origen será recibida por el usuario creador del proceso, con el asunto \"Comunicación rechazada en DocDigital por oficina de partes saliente\" y el nombre de la OPS. En el contenido, se incluirá el detalle de la comunicación, la fecha, el motivo del rechazo, y un link para acceder al documento. Si lo considera necesario, podrá corregir y reiniciar la gestión. Si tienes alguna pregunta, no dudes en contactarte con nosotros. Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket. Recuerde mantener comunicación con su Administrador(a) y Coordinador de Transformación Digital."
+      ]
+    },
+    {
+      "tag": "docdigital_34__certificado_firma_desatendida_expirado_o_revocado_gestin_operador",
+      "patterns": [
+        "Mi certificado de firma desatendida expiró",
+        "El certificado de la Oficina de Partes está revocado",
+        "¿Quién gestiona la renovación del certificado desatendido?",
+        "el operador de firma debe renovar el certificado",
+        "cómo revisar certificados por expirar"
+      ],
+      "responses": [
+        "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! En relación a tu consulta, te informamos que el certificado está revocado (expirado). Esta gestión es responsabilidad del operador de firma a través de https://firma.digital.gob.cl/. El rol de operador puede revisar constantemente los certificados, en este caso los de la Oficina de Partes, para gestionar la renovación. El operador de firma puede listar los certificados a expirar en los próximos 2 meses y gestionar las renovaciones con los usuarios. Si tienes alguna otra pregunta o consulta, no dudes en contactarnos. Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket. Recuerde mantener comunicación con su Administrador(a) y Coordinador de Transformación Digital."
+      ]
+    },
+    {
+      "tag": "docdigital_35__agendar_reuniones_solicita_antecedentes_paso_1",
+      "patterns": [
+        "Quiero agendar una reunión con ustedes",
+        "¿Cómo pido una reunión con el equipo de DocDigital?",
+        "me piden un listado de temas para agendar la reunión",
+        "necesito enviar mis consultas para una reunión",
+        "solicitud de reunión"
+      ],
+      "responses": [
+        "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! En relación a tu consulta, te solicitamos por favor enviar el listado detallado de consultas o temas que deseas abordar. Esto nos permitirá derivarlas a los equipos internos correspondientes para su análisis y pronta respuesta. Con esta información, podremos reunir a las personas adecuadas para participar y responder a tus consultas e inquietudes de manera efectiva. Esperamos tu respuesta. Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket. Recuerde mantener comunicación con su Administrador(a) y Coordinador de Transformación Digital."
+      ]
+    },
+    {
+      "tag": "docdigital_36__agendar_reuniones_paso_2",
+      "patterns": [
+        "Ya envié los temas, quiero agendar la reunión",
+        "¿Qué fechas tienen disponibles para una reunión?",
+        "dame hora para la reunión",
+        "confirmar fecha de reunión",
+        "agendar reunión día XX"
+      ],
+      "responses": [
+        "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! En relación a tu solicitud, te informamos que puedes indicarnos una de las siguientes fechas para agendar la reunión entre tu institución y la División de Gobierno Digital: Día XX, a las XX:XX horas. Quedamos atentos a tu respuesta para proceder con el agendamiento. Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket. Recuerde mantener comunicación con su Administrador(a) y Coordinador de Transformación Digital."
+      ]
+    },
+    {
+      "tag": "docdigital_37__manuales_y_material_dd3",
+      "patterns": [
+        "¿Dónde están los manuales de DocDigital?",
+        "Necesito el manual de usuario de DD3",
+        "¿Dónde encuentro material de capacitación de DocDigital?",
+        "links a manuales y material de DD3",
+        "grabación de capacitación DocDigital"
+      ],
+      "responses": [
+        "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! En relación a tu interés en conocer más sobre DocDigital, dejamos link para participar en las capacitaciones https://gobdigital.cerofilas.gob.cl/tramites/informativo/2785 deben ingresar con claveunica y seleccionar la o las capacitaciones de interés. Paralelamente compartimos material que puede ser de utilidad en este proceso: Presentación PowerPoint sobre la plataforma. Manual de Usuario de DocDigital v3. Instrucciones para obtener el certificado de participación. Documento de preguntas frecuentes. Infografías sobre el uso de la plataforma. Material audiovisual. Grabación de una capacitación. El contenido de la capacitación incluye: Contexto sobre la Ley de Transformación Digital (LTD). Introducción a DocDigital v3 (DD3). Plataformas habilitantes. Modelo de operación. Revisión de la plataforma y sus funcionalidades. Resolución de preguntas frecuentes. Para más información, no dudes en contactarte con nosotros. Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket. Recuerde mantener comunicación con su Administrador(a) y Coordinador de Transformación Digital."
+      ]
+    },
+    {
+      "tag": "docdigital_38__proceso_de_habilitacin_administradora_principal_capacitacin_y_ejercicio",
+      "patterns": [
+        "¿Cómo habilito un Administrador Principal?",
+        "proceso de habilitación de admin principal",
+        "link para registrar administrador principal",
+        "el coordinador debe registrar al admin",
+        "ejercicio de habilitación en producción"
+      ],
+      "responses": [
+        "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! En relación a tu consulta, te informamos que: Designación del Administrador/a Principal: Se requiere que su institución designe un funcionario/a en el rol de Administrador/a Principal de DocDigital. Este rol permite gestionar usuarios administradores, permisos para documentos reservados y entidades internas (como oficinas de partes internas). Procedimiento de Registro: El Coordinador/a de Transformación Digital deberá ingresar con ClaveÚnica al siguiente enlace: https://gobdigital.cerofilas.gob.cl/tramites/iniciar/2678 para completar el registro. Puede designar hasta 3 administradores principales por entidad. Habilitación en Plataforma y Capacitación: Tras el registro, el administrador será evaluado para habilitación en la plataforma demo (requiere FirmaGob: https://firma.gob.cl/). Se invita a la capacitación disponible en: https://gobdigital.cerofilas.gob.cl/tramites/informativo/2785. La habilitación en producción será efectiva luego de completar al menos un envío de \"comunicación oficial\". Para más información, no dudes en contactarte con nosotros. Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket. Recuerde mantener comunicación con su Administrador(a) y Coordinador de Transformación Digital."
+      ]
+    },
+    {
+      "tag": "docdigital_39__paso_a_paso_de_operador_firma_para_certificado_desatendido",
+      "patterns": [
+        "¿Cómo obtengo un certificado desatendido para la Oficina de Partes?",
+        "pasos para que la oficina de partes pueda numerar",
+        "¿Qué permiso necesita el usuario para certificado desatendido?",
+        "habilitar la aplicación DocDigital en 'Permisos de Certificados Desatendidos'",
+        "paso a paso certificado desatendido para OP"
+      ],
+      "responses": [
+        "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! En relación a tu consulta, te informamos que para que las oficinas de parte puedan numerar documentos en DocDigital, necesitan un Certificado Desatendido. A continuación, detallamos los pasos: Modificar los Datos del Usuario: El Operador debe agregar en los propósitos permitidos del usuario el permiso \"Desatendido\" y guardar los cambios. Solicitud del Certificado Desatendido: Una vez modificado, el usuario debe ingresar al sistema y solicitar el certificado del tipo Desatendido. Aprobación del Ministro de Fe: El Ministro de Fe de la institución debe aprobar esta solicitud. Habilitación en DocDigital: Luego de aprobada la solicitud, el usuario debe ingresar a FirmaGob, acceder a la opción \"Permisos de Certificados Desatendidos\" y habilitar la aplicación \"DocDigital\". Este procedimiento permitirá realizar la numeración necesaria para las comunicaciones en la plataforma. Para más información, revisa las guías disponibles en: https://firma.gob.cl/biblioteca/manuales. Si tienes alguna pregunta adicional, no dudes en contactarte con nosotros. Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket. Recuerde mantener comunicación con su Administrador(a) y Coordinador de Transformación Digital."
+      ]
+    },
+    {
+      "tag": "docdigital_40__sistema_notificaciones_doc_digital_v3",
+      "patterns": [
+        "¿Qué notificaciones envía DocDigital?",
+        "lista de todas las notificaciones de DD3",
+        "no me llegan los correos de no-reply@digital.gob.cl",
+        "¿Hay notificación de 'activación de subrogancia'?",
+        "¿Qué notificaciones de rechazo existen?"
+      ],
+      "responses": [
+        "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! En relación a tu consulta, te informamos que las notificaciones disponibles actualmente en DocDigital 3 son las siguientes: Documento pendiente para visar. Documento pendiente para firmar. Rechazo por visador. Rechazo por firmante. Rechazo por Oficina de Partes de origen. Comunicación enviada por OPS. Comunicación ingresada a OPE. Rechazo por Oficina de Partes Entrante. Comunicación derivada por OPE. Activación de subrogancia. Desactivación de subrogancia. Documento compartido por destinatario final. Comunicación pendiente de folio/despacho. Estas notificaciones son enviadas al correo registrado en la plataforma. Recuerda verificar que el correo no-reply@digital.gob.cl esté habilitado en las listas blancas de tu institución. Si tienes alguna pregunta adicional, no dudes en contactarte con nosotros. Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket. Recuerde mantener comunicación con su Administrador(a) y Coordinador de Transformación Digital."
+      ]
+    },
+    {
+      "tag": "docdigital_41__destinatario_un_correo_electrnico",
+      "patterns": [
+        "¿Puedo enviar un documento a un correo electrónico?",
+        "¿Por qué no puedo poner un email como destinatario?",
+        "¿Los destinatarios tienen que estar registrados en DocDigital?",
+        "no me deja agregar un correo como destinatario",
+        "error al usar email de destinatario"
+      ],
+      "responses": [
+        "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! En relación a tu consulta, te informamos que no es posible ingresar como destinatario un correo electrónico en las comunicaciones recibidas por usuarios finales en DocDigital. Esto se debe a que solo pueden ser destinatarios los usuarios registrados en la plataforma, asegurando la trazabilidad de las comunicaciones oficiales. Si tienes alguna pregunta adicional, no dudes en contactarte con nosotros. Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket. Recuerde mantener comunicación con su Administrador(a) y Coordinador de Transformación Digital."
+      ]
+    },
+    {
+      "tag": "docdigital_42__respuesta_error_api",
+      "patterns": [
+        "Error en la API de DocDigital v3",
+        "cambios en la API v3",
+        "los destinatarios por email ya no funcionan en la API v3",
+        "nuevos códigos de entidades y usuarios en la API",
+        "URL de prueba y producción de la API v3"
+      ],
+      "responses": [
+        "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! En relación a tu consulta, te informamos que hemos recibido todas las observaciones y solicitudes relacionadas con la entrada en producción de la API DocDigital v3. Actualmente, el último ajuste ya se encuentra operativo en el servicio en producción. Cambios importantes en el proceso: Codificaciones: Las entidades y usuarios ahora cuentan con nuevos códigos disponibles a través de los mismos métodos usados anteriormente. Destinatarios: En esta versión, no se podrá utilizar correos electrónicos como destinatarios. Las entidades destinatarias y usuarios referenciados deben especificarse correctamente. Restricción de emails: Las comunicaciones con destinatarios tipo correo electrónico no serán procesadas. Ambientes habilitados: Prueba: https://api-demodoc.digital.gob.cl/api/ Producción: https://api-doc.digital.gob.cl/api/ En caso de persistir algún inconveniente, no dudes en contactarnos para buscar la solución a la brevedad. Si tienes alguna pregunta adicional, no dudes en contactarte con nosotros. Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket. Recuerde mantener comunicación con su Administrador(a) y Coordinador de Transformación Digital."
+      ]
+    },
+    {
+      "tag": "docdigital_43__creacin_de_entidades_dependientes_para_instituciones_nuevas",
+      "patterns": [
+        "¿Cómo creo entidades dependientes?",
+        "¿Cuándo enviarán el protocolo para crear entidades dependientes?",
+        "necesito crear una oficina de partes interna",
+        "guía para creación de entidades dependientes",
+        "solicitud de creación de entidades dependientes"
+      ],
+      "responses": [
+        "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! En relación a la creación de entidades dependientes y oficinas de partes (OP) asociadas, te informamos lo siguiente: Durante las próximas semanas, enviaremos el protocolo (guía) para la creación de entidades dependientes y oficinas de partes internas. En esta instancia, podrás solicitar la creación de estas entidades, que podrán operar en DD3. Dado que no es posible resolver este caso al día de hoy, damos por resuelto este ticket. Si tienes alguna pregunta adicional, no dudes en contactarte con nosotros. Agradecemos tu comprensión. Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket. Recuerde mantener comunicación con su Administrador(a) y Coordinador de Transformación Digital."
+      ]
+    },
+    {
+      "tag": "docdigital_44__api_url_actualizados_archivos_swagger_y_accestoken",
+      "patterns": [
+        "¿Cuáles son las URL de la API de DocDigital v3?",
+        "Link al Swagger de producción de DocDigital v3",
+        "¿Dónde está el Access_Token de demo de la API?",
+        "URL de Swagger demo",
+        "URL de Access_Token producción"
+      ],
+      "responses": [
+        "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! En relación a tu consulta sobre las URL actualizadas para la versión DocDigital V3, te informamos que los enlaces actualizados son los siguientes: Archivo Swagger Producción: https://api-doc.digital.gob.cl/api/def/swagger-ui/ Archivo Swagger Demo: https://api-demodoc.digital.gob.cl/api/def/swagger-ui/#/ Access_Token Producción: https://api-doc.digital.gob.cl/api/oauth/token Access_Token Demo: https://api-demodoc.digital.gob.cl/api/oauth/token Si tienes alguna pregunta adicional, no dudes en contactarte con nosotros. Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket. Recuerde mantener comunicación con su Administrador(a) y Coordinador de Transformación Digital."
+      ]
+    },
+    {
+      "tag": "docdigital_45__habilitacin_admin_ppal_demo",
+      "patterns": [
+        "Ya estoy creado como administrador principal en demo",
+        "link a la plataforma demo de docdigital",
+        "habilitación de admin principal en DEMO",
+        "acceso a plataforma DEMO",
+        "me crearon como admin demo"
+      ],
+      "responses": [
+        "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! En relación a tu consulta, te informamos que has sido creado como Administrador Principal de tu Institución. Para hacer revisión de la plataforma DEMO de DocDigital, te solicitamos ingresar en el siguiente enlace: Plataforma DEMO de DocDigital. Si tienes alguna pregunta adicional, no dudes en contactarte con nosotros. Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket. Recuerde mantener comunicación con su Administrador(a) y Coordinador de Transformación Digital."
+      ]
+    },
+    {
+      "tag": "docdigital_46__habilitacin_admin_ppal_prod",
+      "patterns": [
+        "Ya estoy creado como administrador principal en producción",
+        "link a la plataforma de producción de docdigital",
+        "habilitación de admin principal en PROD",
+        "acceso a plataforma de Producción",
+        "me crearon como admin prod"
+      ],
+      "responses": [
+        "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! En relación a tu consulta, te informamos que has sido creado como Administrador Principal de tu Institución. Para hacer revisión de la plataforma DocDigital, te solicitamos ingresar en el siguiente enlace: Plataforma DocDigital Si tienes alguna pregunta adicional, no dudes en contactarte con nosotros. Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket. Recuerde mantener comunicación con su Administrador(a) y Coordinador de Transformación Digital."
+      ]
+    },
+    {
+      "tag": "docdigital_47__ejercicio_primer_envo_para_habilitarlo_en_docdigital_3",
+      "patterns": [
+        "¿Cómo me habilito en producción de DocDigital?",
+        "Tengo que hacer un envío de prueba en demo",
+        "¿Qué es el ejercicio de habilitación en DocDigital 3?",
+        "necesito enviar una comunicación oficial en demo primero",
+        "paso a paso para habilitación en DD"
+      ],
+      "responses": [
+        "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! En relación a tu consulta, te informamos que si ya estás creado en DocDigital Demo (https://demodoc.digital.gob.cl/), debes realizar el envío de al menos una COMUNICACIÓN OFICIAL. Una vez completado este proceso, tu institución podrá ser habilitada en la versión de producción de DocDigital (https://doc.digital.gob.cl/). Recuerda que para realizar este proceso, necesitarás los certificados de FirmaGob para el firmante (propósito general) y la Oficina de Partes (desatendido). Adjuntamos el paso a paso en formato PDF para la Habilitación en DD. Si tienes alguna pregunta adicional, no dudes en contactarte con nosotros. Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket. Recuerde mantener comunicación con su Administrador(a) y Coordinador de Transformación Digital."
+      ]
+    },
+    {
+      "tag": "docdigital_48__respuesta_a_hospitales_que_solicitan_doc_digital",
+      "patterns": [
+        "Soy un hospital y quiero DocDigital",
+        "¿Los hospitales pueden usar DocDigital de forma independiente?",
+        "¿Cuál es el plan de acción para hospitales?",
+        "replanificación de estrategia con hospitales",
+        "los servicios de salud administran a los hospitales?"
+      ],
+      "responses": [
+        "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! En relación a tu consulta, te informamos que con respecto a tu consulta, te informamos que estamos replanificando la estrategia con los hospitales. Inicialmente, se había definido que cada servicio de salud administrara a los hospitales correspondientes. Sin embargo, hemos identificado una necesidad creciente de que los hospitales operen de forma independiente y puedan solicitar directamente los distintos servicios y plataformas transversales que ofrecemos desde Gobierno Digital. En este contexto, estamos trabajando en un plan de acción con estos organismos. Una vez definido, lo comunicaremos a todos los servicios de salud para que estén al tanto, y así puedan comenzar la implementación de DocDigital. Si tienes alguna pregunta adicional, no dudes en contactarte con nosotros. Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket. Recuerde mantener comunicación con su Administrador(a) y Coordinador de Transformación Digital."
+      ]
+    },
+    {
+      "tag": "docdigital_49__sugerencias_mejoras",
+      "patterns": [
+        "Tengo una sugerencia para DocDigital",
+        "¿Cómo envío una idea de mejora?",
+        "Quiero sugerir un cambio en la plataforma",
+        "mi sugerencia fue transmitida a desarrollo",
+        "evaluación de sugerencias"
+      ],
+      "responses": [
+        "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! En relación a tus sugerencias, te informamos que han sido transmitidas al área de desarrollo para su evaluación e incorporación en el producto DocDigital. Agradecemos mucho tus aportes, ya que nos permiten mejorar continuamente el producto. Por el momento, daremos por resuelto este ticket, ya que no podemos ofrecer una solución inmediata desde esta mesa de ayuda. Agradecemos tu comprensión. Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket. Recuerde mantener comunicación con su Administrador(a) y Coordinador de Transformación Digital."
+      ]
+    },
+    {
+      "tag": "docdigital_50__documento_es_parte_de_un_procedimiento_administrativo",
+      "patterns": [
+        "¿Qué es el campo 'procedimiento administrativo'?",
+        "¿Es obligatorio marcar si es parte de un PA?",
+        "¿Qué es CPAT?",
+        "Guía Rápida del Catálogo de Procedimientos Administrativos",
+        "marcar que la comunicación es parte de un PA"
+      ],
+      "responses": [
+        "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! En relación a tu consulta, te informamos que si la comunicación pertenece a un procedimiento administrativo (PA) que tu institución ha informado en el marco de CPAT, puedes indicar o no en la comunicación oficial o interna que estás realizando el proceso a través de DocDigital. Este campo no es obligatorio. Si decides marcar que la comunicación es parte de un PA, se solicitará el RUN y Plazo. Finalmente, adjuntamos la Guía Rápida del Catálogo de Procedimientos Administrativos y Trámites para tu referencia. Para más información sobre el proceso de identificación y caracterización de los PA, revisa el sitio de CPAT. Si tienes alguna pregunta adicional, no dudes en contactarte con nosotros. Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket. Recuerde mantener comunicación con su Administrador(a) y Coordinador de Transformación Digital."
+      ]
+    },
+    {
+      "tag": "docdigital_51__administrador_principal_para_entidad_no_creada",
+      "patterns": [
+        "Mi entidad no está creada, ¿cómo nombro un admin?",
+        "¿Cómo registro un admin principal si la entidad no existe?",
+        "link para registrar admin principal de entidad nueva",
+        "ingresar entidad manualmente en CeroFilas",
+        "designar admin principal para entidad no creada"
+      ],
+      "responses": [
+        "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! En relación a tu solicitud, le solicitamos la designación de un funcionario o funcionaria para el rol de Administrador/a Principal de la Plataforma DocDigital versión 3.0. Esta persona podrá gestionar los usuarios y nuevas entidades en la plataforma. Para llevar a cabo este registro, el Coordinador/a de Transformación Digital de su institución debe ingresar con ClaveÚnica al siguiente enlace y completar la información solicitada. En caso de no estar ingresada la entidad, por favor ingresarla manualmente: [Link Faltante en Original] Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket. Recuerde mantener comunicación con su Administrador(a) y Coordinador de Transformación Digital."
+      ]
+    },
+    {
+      "tag": "docdigital_52__ejercicio_de_habilitacin_no_realizado",
+      "patterns": [
+        "Aún no me habilitan en producción",
+        "No he hecho el ejercicio de habilitación",
+        "Tengo que enviar una comunicación oficial en demo primero",
+        "¿Por qué no me habilitan en producción?",
+        "video demo del ejercicio de habilitación"
+      ],
+      "responses": [
+        "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! En relación a tu solicitud de habilitación en producción, te informamos que para completar este proceso, tu institución debe realizar al menos un envío de Comunicación Oficial en el entorno de prueba de DocDigital v3. Puedes realizar este ejercicio accediendo a la plataforma de prueba aquí: https://docv3.cert.digital.gob.cl/. Además, te dejamos a disposición un video demo para que puedas orientarte en el proceso: Video demo. Agradecemos que completes este ejercicio, ya que es el medio de verificación que tu institución está lista para crear, visar, firmar y distribuir un documento oficial. Si tienes alguna pregunta adicional, no dudes en contactarte con nosotros. Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket. Recuerde mantener comunicación con su Administrador(a) y Coordinador de Transformación Digital."
+      ]
+    },
+    {
+      "tag": "docdigital_53__habilitacin_corporaciones_municipales",
+      "patterns": [
+        "¿Las corporaciones municipales pueden usar DocDigital?",
+        "¿Cuándo habilitarán a las corporaciones municipales?",
+        "Dictamen E160316/2021 sobre corporaciones",
+        "Ley 21.180 aplica a corporaciones municipales",
+        "cuándo contactarán a las corporaciones para DocDigital"
+      ],
+      "responses": [
+        "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! En relación a tu consulta, Con respecto a su consulta, le informamos lo siguiente: Según el dictamen E160316/2021 de la Contraloría General de la República, la Ley N° 19.880 es aplicable a las corporaciones municipales. En consecuencia, la Ley N° 21.180 de Transformación Digital también aplica a su institución. Actualmente, estamos realizando un levantamiento de las corporaciones municipales para integrarlas gradualmente a nuestras plataformas. A partir de junio de 2025, comenzaremos a contactar a las instituciones para su incorporación. En este contexto, hemos registrado su solicitud y serán notificados por este medio cuando inicie el proceso de habilitación con sus respectivas instrucciones. Si necesita más información, no dude en comunicarse con nosotros a través de la Mesa de Servicios. Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket. Recuerde mantener comunicación con su Administrador(a) y Coordinador de Transformación Digital."
+      ]
+    },
+    {
+      "tag": "docdigital_54__registro_de_un_nuevo_administrador_principal",
+      "patterns": [
+        "¿Cómo registro un nuevo Administrador Principal?",
+        "¿Quién puede registrar un Admin Principal?",
+        "link para registrar nuevo admin principal en CeroFilas",
+        "cuántos administradores principales puedo tener",
+        "el Coordinador de Transformación Digital registra al admin"
+      ],
+      "responses": [
+        "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! En relación a tu consulta, te informamos que para registrar a un nuevo Administrador Principal, solamente el Coordinador o Coordinadora de Transformación Digital de tu institución deberá ingresar con Clave Única al siguiente link: https://gobdigital.cerofilas.gob.cl/tramites/iniciar/3016 y completar la información solicitada. Recuerda que pueden nombrar hasta tres administradores principales por entidad. Si tienes alguna pregunta adicional, no dudes en contactarte con nosotros. Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket. Recuerde mantener comunicación con su Administrador(a) y Coordinador de Transformación Digital."
+      ]
+    },
+    {
+      "tag": "docdigital_55__gestin_de_documentos_dashboard_reporte",
+      "patterns": [
+        "¿Cómo gestiono documentos en DocDigital?",
+        "Necesito un reporte o dashboard de documentos",
+        "¿Cómo filtro documentos por fecha?",
+        "el administrador puede gestionar documentos?",
+        "filtrar por tipo de documento"
+      ],
+      "responses": [
+        "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! En relación a tu consulta, te informamos que para gestionar documentos en la plataforma DocDigital, debes dirigirte al Administrador(a) de la plataforma en tu institución. Desde allí, podrás realizar los filtros correspondientes, como filtrar por fecha o por tipo de documento, para facilitar la gestión. Si tienes alguna pregunta adicional, no dudes en contactarte con nosotros. Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket. Recuerde mantener comunicación con su Administrador(a) y Coordinador de Transformación Digital."
+      ]
+    },
+    {
+      "tag": "docdigital_56__certificados_firmagob_duracin_1_ao",
+      "patterns": [
+        "¿Por qué los certificados de FirmaGob duran solo 1 año?",
+        "El certificado dura un año",
+        "¿Cuándo vencen los certificados raíz de FirmaGob?",
+        "mis certificados ahora duran solo un año",
+        "renovación de certificados raíz 18 de enero 2026"
+      ],
+      "responses": [
+        "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! En relación a tu consulta, te informamos que la vigencia de los certificados obtenidos a través de la plataforma FirmaGob se ha reducido a un año, debido a que nuestros certificados raíz e intermedios vencen el 18 de enero de 2026. Estamos trabajando en la renovación de estos certificados, lo que permitirá que las instituciones obtengan certificados con mayor vigencia una vez completada la actualización. Si tienes alguna pregunta adicional, no dudes en contactarte con nosotros. Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket. Recuerde mantener comunicación con su Administrador(a) y Coordinador de Transformación Digital."
+      ]
+    },
+    {
+      "tag": "docdigital_57__no_estampa_firma",
+      "patterns": [
+        "Firmé el documento pero no se estampa la firma",
+        "La firma no aparece en el PDF",
+        "¿Es necesario el sello o timbre visual?",
+        "cómo verifico la firma si no se ve",
+        "¿Es necesario un código QR?"
+      ],
+      "responses": [
+        "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! En relación a tu consulta, te informamos que pasaremos el caso a nuestra área de desarrollo para su evaluación. Respecto a la re-tramitación del documento, ¿sería posible que lo tramitaran nuevamente desde cero? Esto puede ser necesario si, por ejemplo, ocurrió una caída del servicio y la firma no se estampó correctamente. Como regla general, si el documento está firmado con Firma Electrónica Avanzada, no es necesario incorporar ningún tipo de timbre o sello adicional. Las firmas se pueden verificar en la estructura del documento utilizando un visor adecuado, que permite ver el panel de firmas electrónicas. Para los documentos impresos o que deben ser visualizados de forma sencilla, es útil incluir un \"sello\" o imagen como apoyo visual, pero la veracidad del documento se valida a través del certificado de firma incorporado. Recuerda que, en caso de que el documento sea impreso, es necesario incorporar un código QR o enlace que permita verificar la autenticidad del documento a través del repositorio documental de resguardo. Si tienes alguna pregunta adicional, no dudes en contactarte con nosotros. Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket. Recuerde mantener comunicación con su Administrador(a) y Coordinador de Transformación Digital."
+      ]
+    },
+    {
+      "tag": "docdigital_58__proveedores_de_gestores_documentales",
+      "patterns": [
+        "¿Qué proveedores de gestores documentales recomiendan?",
+        "lista de proveedores integrados con DocDigital",
+        "¿Ustedes hacen seguimiento a los proveedores?",
+        "cómo consulto a otras entidades sobre sus proveedores",
+        "proveedores de gestores documentales"
+      ],
+      "responses": [
+        "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! En relación a tu consulta, te informamos que no realizamos un seguimiento de los proveedores de gestores documentales. Nuestro trabajo se enfoca en apoyar a las instituciones y sus proveedores en el proceso de integración directa con nuestras plataformas. No gestionamos el detalle de los proveedores de los sistemas de cada entidad. Te sugerimos que realices esta consulta directamente a las entidades que ya han integrado con estas plataformas, como Servicio Civil, FONASA, SEA, entre otras. Si tienes alguna pregunta adicional, no dudes en contactarte con nosotros. Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket. Recuerde mantener comunicación con su Administrador(a) y Coordinador de Transformación Digital."
+      ]
+    },
+    {
+      "tag": "docdigital_59__versin_responsiva_mvil_vs_versin_de_escritorio",
+      "patterns": [
+        "¿Puedo usar DocDigital en el celular?",
+        "La versión móvil no tiene todas las opciones",
+        "diferencias entre versión móvil y de escritorio",
+        "faltan opciones en la versión responsiva",
+        "usar docdigital en el pc"
+      ],
+      "responses": [
+        "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! En relación a tu consulta, te informamos que la versión responsiva (móvil) de DocDigital no cuenta con todas las opciones disponibles en la versión de escritorio. Por lo tanto, te recomendamos abrir DocDigital desde tu PC para verificar y realizar la gestión requerida. Si tienes alguna pregunta adicional, no dudes en contactarte con nosotros. Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket. Recuerde mantener comunicación con su Administrador(a) y Coordinador de Transformación Digital."
+      ]
+    },
+    {
+      "tag": "docdigital_60__docdigital_empresas_privadas",
+      "patterns": [
+        "¿Las empresas privadas pueden usar DocDigital?",
+        "Soy una empresa, ¿puedo usar DocDigital?",
+        "¿DocDigital es solo para el Estado?",
+        "quién puede usar DocDigital",
+        "acceso a DocDigital para privados"
+      ],
+      "responses": [
+        "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! En relación a tu consulta, te informamos que: Nuestras facultades se centran en coordinar, asesorar y respaldar el uso estratégico de tecnologías digitales para mejorar la gestión de los órganos de la Administración del Estado. En este marco, hemos implementado la plataforma DocDigital, diseñada exclusivamente para los órganos del Estado y gestionada a través de contrapartes institucionales. Por lo tanto, agradeceremos que te comuniques con los administradores de DocDigital en tu institución para mayor asistencia. Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket. Recuerde mantener comunicación con su Administrador(a) y Coordinador de Transformación Digital."
+      ]
+    },
+    {
+      "tag": "docdigital_61__firma_masiva_documentos",
+      "patterns": [
+        "¿Puedo firmar varios documentos a la vez en DocDigital?",
+        "¿DocDigital tiene firma masiva?",
+        "¿Cómo funciona la firma masiva de documentos?",
+        "¿Cuál es el límite de documentos para la firma masiva?",
+        "recomiendan lotes de 10 documentos"
+      ],
+      "responses": [
+        "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! En relación a tu consulta, te informamos que la funcionalidad de firma masiva está habilitada en nuestra plataforma DocDigital. Puedes enviar a firmar múltiples documentos siempre que cada uno no supere los 20 MB. Recomendamos generar lotes de no más de 10 documentos para agilizar el proceso. En la imagen adjunta se aprecia la sección correspondiente y el procedimiento para realizar la firma masiva seleccionando múltiples documentos. Si tienes alguna duda adicional, no dudes en contactarte con nosotros. Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket. Recuerde mantener comunicación con su Administrador(a) y Coordinador de Transformación Digital."
+      ]
+    },
+    {
+      "tag": "docdigital_62__problemas_de_acceso_limpiar_cach_o_recuperar_claveunica",
+      "patterns": [
+        "No puedo entrar a DocDigital",
+        "La página de DocDigital no carga",
+        "¿Cómo borro el caché de mi navegador?",
+        "Olvidé mi ClaveÚnica",
+        "problemas de acceso a doc.digital.gob.cl"
+      ],
+      "responses": [
+        "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! En relación a tu consulta, te informamos que para solucionar problemas con la carga de DocDigital en https://doc.digital.gob.cl/, recomendamos borrar la memoria caché de tu navegador. Esto ayuda a cargar la versión más reciente de la plataforma y solucionar bloqueos o problemas de carga. Instrucciones para borrar caché según el navegador: Google Chrome: Ve al menú > Herramientas > Borrar datos de navegación > Archivos almacenados en caché > Borrar datos. Internet Explorer: Herramientas > Opciones de Internet > General > Historial de exploración > Eliminar. Firefox: Menú > Opciones > Avanzado > Red > Limpiar ahora. Si olvidaste tu ClaveÚnica, recupérala en https://claveunica.gob.cl/recuperar. Si tienes dudas adicionales, no dudes en contactarte. Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket. Recuerde mantener comunicación con su Administrador(a) y Coordinador de Transformación Digital."
+      ]
+    },
+    {
+      "tag": "docdigital_63__factibilidad_tcnica_y_el_tiempo_asociado_al_requerimiento",
+      "patterns": [
+        "¿Cuánto se demoran en mi requerimiento?",
+        "Necesito que evalúen la factibilidad técnica",
+        "evaluación de factibilidad y tiempo de un requerimiento",
+        "cuándo tendrán la factibilidad técnica",
+        "tiempo estimado para mi requerimiento"
+      ],
+      "responses": [
+        "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! En relación a tu consulta, te informamos que esta será revisada por el equipo técnico para evaluar la factibilidad técnica y determinar el tiempo estimado necesario para atender el requerimiento. Si tienes alguna pregunta adicional, no dudes en contactarte con nosotros. Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket. Recuerde mantener comunicación con su Administrador(a) y Coordinador de Transformación Digital."
+      ]
+    },
+    {
+      "tag": "docdigital_64__documento_digitales__no_digitalizados_scanner",
+      "patterns": [
+        "¿Puedo subir un documento escaneado a DocDigital?",
+        "Los documentos deben ser digitales o digitalizados",
+        "diferencia entre documento digital y digitalizado",
+        "los documentos escaneados solo van como anexos",
+        "subir scanner como documento conductor"
+      ],
+      "responses": [
+        "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! En relación a tu consulta, te informamos que los documentos que se deben subir como documentos conductores en DocDigital deben ser digitales, no digitalizados (escaneados). En caso de contar con documentos digitalizados, podrás adjuntarlos como anexos. No obstante, recomendamos reiniciar la tramitación considerando los lineamientos mencionados para asegurar la validez del proceso. Si tienes dudas, no dudes en contactarnos. Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket. Recuerde mantener comunicación con su Administrador(a) y Coordinador de Transformación Digital."
+      ]
+    },
+    {
+      "tag": "docdigital_65__carga_masiva_de_usuarios_en_plataformas",
+      "patterns": [
+        "¿Puedo hacer una carga masiva de usuarios en DocDigital?",
+        "¿Cómo creo muchos usuarios a la vez?",
+        "No hay opción de carga masiva de usuarios",
+        "los usuarios de demo y producción se crean por separado",
+        "el administrador principal puede crear usuarios"
+      ],
+      "responses": [
+        "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! En relación a tu consulta, te informamos que la creación de usuarios en Doc Digital: No existe la opción de carga masiva de usuarios. Los usuarios(as) deben crearse por separado tanto en DEMODOC como en la versión de Producción Doc Digital. El Administrador Principal puede designar a otros Administradores para distribuir la tarea de creación de usuarios. La creación de usuarios requiere solo seis campos, por lo que recomendamos usar un archivo Excel para organizar la información y facilitar el proceso. Si tienes alguna pregunta, no dudes en contactarnos. Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket. Recuerde mantener comunicación con su Administrador(a) y Coordinador de Transformación Digital."
+      ]
+    },
+    {
+      "tag": "docdigital_66__habilitacin_nueva_institucin_o_entidad_modo_recepcin",
+      "patterns": [
+        "Mi institución fue habilitada en 'modo recepción'",
+        "¿Qué significa modo recepción?",
+        "¿Por qué solo puedo recibir documentos y no enviar?",
+        "habilitado en modo recepción por falta de FirmaGob",
+        "solo podemos recepcionar comunicaciones"
+      ],
+      "responses": [
+        "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! En relación a tu solicitud, te informamos: Habilitación de la Municipalidad de XX La Municipalidad de XX ya está habilitada en la plataforma de producción DocDigital, tras estar previamente habilitada en la plataforma de pruebas DemoDoc. El Administrador Principal puede ahora crear usuarios (administradores, generales, oficina de partes) y asignar permisos de \"Ver Reservados\". FirmaGob Debido a la falta de FirmaGob, tu institución solo podrá recepcionar comunicaciones de otras instituciones, pero no podrá firmar documentos ni generar comunicaciones. Recursos adicionales Video de capacitación: Ver video Más detalles de capacitación: Capacitaciones Guías y documentación: DocDigital Mesa de ayuda: Mesa de Ayuda Gobierno Digital Para más información, no dudes en contactarnos. Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket. Recuerde mantener comunicación con su Administrador(a) y Coordinador de Transformación Digital."
+      ]
+    },
+    {
+      "tag": "docdigital_67__comunicaciones_firmadas_son_vlidas_para_presentarlos_fuera_de_una_institucin_del_estado",
+      "patterns": [
+        "¿Los documentos firmados en DocDigital son válidos fuera del Estado?",
+        "¿La firma de FirmaGob es válida para privados?",
+        "validez de la firma electrónica avanzada fuera del estado",
+        "documento firmado con FirmaGob es válido?",
+        "validez de firma para instituciones no estatales"
+      ],
+      "responses": [
+        "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! En relación a tu consulta, te informamos que los documentos firmados con FirmaGob (https://firma.digital.gob.cl/) tienen la misma validez que los firmados con otras entidades certificadoras, ya que son firmas electrónicas avanzadas. Esto asegura su validez tanto dentro como fuera del ámbito estatal. Si tienes alguna pregunta, no dudes en contactarte con nosotros. Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket. Recuerde mantener comunicación con su Administrador(a) y Coordinador de Transformación Digital."
+      ]
+    },
+    {
+      "tag": "docdigital_68__lentitud_registrada_en_la_plataforma_docdigital_relacionada_con_firmagob",
+      "patterns": [
+        "DocDigital está lento por culpa de FirmaGob",
+        "Hay lentitud en DocDigital y FirmaGob",
+        "problema de lentitud relacionado con FirmaGob",
+        "FirmaGob está causando lentitud en DocDigital",
+        "lentitud en ambas plataformas"
+      ],
+      "responses": [
+        "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! En relación a tu consulta, te informamos que: La lentitud registrada en la plataforma DocDigital está relacionada a la plataforma FirmaGOB. Lamentamos las molestias que esta situación pueda ocasionar, sin embargo, ya se están tomando medidas para solucionarlo. Agradecemos tu paciencia y te avisaremos por este canal cuando la incidencia haya sido superada. Si tienes alguna pregunta, no dudes en contactarte con nosotros. Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket. Recuerde mantener comunicación con su Administrador(a) y Coordinador de Transformación Digital."
+      ]
+    },
+    {
+      "tag": "docdigital_69__resp_1_codificador__doc_envo_de_planilla",
+      "patterns": [
+        "¿Cómo ingreso las dependencias a la plataforma?",
+        "Me pidieron completar una planilla para las dependencias",
+        "¿Quién carga la planilla de dependencias?",
+        "planilla para crear Oficinas de Partes",
+        "envío de planilla del codificador"
+      ],
+      "responses": [
+        "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! En relación a tu consulta, te informamos que ya tenemos habilitado el sistema para ingresar las dependencias a la plataforma. A continuación, los pasos a seguir: Completar la planilla adjunta (con ejemplos de llenado en verde), agregando o modificando contenido según corresponda. Enviar la planilla completada por este medio. Nosotros cargaremos la planilla en la plataforma. Te avisaremos cuando esté disponible y te enviaremos el procedimiento para crear las Oficinas de Partes en DocDigital. Es importante que el llenado sea realizado por el Administrador (a) Principal. Además, te invitamos a la próxima capacitación para Administradores donde se revisará este proceso en detalle: https://gobdigital.cerofilas.gob.cl/tramites/informativo/2785. Si tienes alguna pregunta, no dudes en contactarte con nosotros. Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket. Recuerde mantener comunicación con su Administrador(a) y Coordinador de Transformación Digital."
+      ]
+    },
+    {
+      "tag": "docdigital_70__resp_2_codificador_doc_consideraciones_proceso_de_habilitacin_de_dependencias_y_usuarios",
+      "patterns": [
+        "¿Cuáles son las consideraciones para habilitar dependencias?",
+        "¿Cómo habilito una nueva dependencia en producción?",
+        "¿Las oficinas de partes pueden ser solo de 'envío interno'?",
+        "el administrador principal gestiona la nueva dependencia",
+        "habilitación de dependencias y usuarios"
+      ],
+      "responses": [
+        "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! En relación a tu consulta sobre el proceso de habilitación de Dependencias y OP internas en DocDigital, te informamos lo siguiente: En primer lugar invitar a la capacitación para Administradores , inscripciones acá https://gobdigital.cerofilas.gob.cl/tramites/informativo/2785 DocDigital: gestión avanzada para administradores y administradoras. Mientras favor revisar el siguiente video https://www.youtube.com/watch?v=ZDjJfZEytJo Algunas consideraciones del proceso Las \"dependencias\" debieron ser agregado en la planilla enviada con dependencia a la Municipalidad y cargado en el codificador (vía ticket a Mesa de Ayuda). Posteriormente, te informaremos que el Administrador(a) principal pueda habilitar la nueva dependencia en producción. La nueva dependencia se habilita automáticamente en DemoDoc y debe ser activada por el Administrador(a) principal en producción. El Administrador(a) principal será el único rol que podrá gestionar la nueva dependencia. recuerde que una oficina de partes puede ser solo para \"envío interno\" y puede configurar para que despache por otra Oficina de partes Por ejemplo : estos pasos debe seguir el Administrador principal para que Gabinete solo reciba y despache por la OP de la Municipalidad Al cargar la Oficina de Partes por Dependencia, el sistema permitirá elegir la oficina de parte y usuario(a) referenciados al generar una comunicación interna. El Administrador(a) principal podrá agregar usuarios a la nueva dependencia: Administradores, Oficina de Partes y Usuarios Generales. Si el usuario ya está creado en la principal, deberá duplicarse en la secundaria. Recuerda que todos los usuarios inactivos deben ser activados por el Administrador(a) principal en producción. finalmente - Las oficina de partes son puntos de acceso a la entidad (principal o no) - al dejar una entidad como principal se corta del árbol, y hay que nombrar un nuevo administrador principal - cada entidad puede crear todas las oficinas de partes que definan , pero pueden usar 3 en una entidad , recibe , despacha e interna Si tienes alguna pregunta adicional, no dudes en contactarnos. Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket. Recuerde mantener comunicación con su Administrador(a) y Coordinador de Transformación Digital."
+      ]
+    },
+    {
+      "tag": "docdigital_71__adobe_firma_no_reconocida",
+      "patterns": [
+        "Adobe dice que la firma no es reconocida",
+        "¿Por qué la firma aparece como no válida en Adobe?",
+        "¿Gobdigital tiene convenio con Adobe?",
+        "firma no reconocida en Adobe",
+        "validez de firma en Adobe"
+      ],
+      "responses": [
+        "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! En relación a tu consulta, te informamos que Gobdigital no tiene formalizada la firma electrónica con Adobe para validar los certificados de firma. Por lo tanto, aunque la firma será reconocida, aparecerá como no válida en este tipo de plataformas. Si tienes alguna pregunta adicional, no dudes en contactarnos. Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket. Recuerde mantener comunicación con su Administrador(a) y Coordinador de Transformación Digital."
+      ]
+    },
+    {
+      "tag": "docdigital_72__reenviar_un_documento_de_una_oficina_de_partes_a_otra",
+      "patterns": [
+        "¿Puedo reenviar un documento de una Oficina de Partes a otra?",
+        "¿Cómo re-derivo un documento?",
+        "¿Puedo agregar destinatarios después del acuse de recibo?",
+        "no es posible reenviar un documento",
+        "agregar destinatarios adicionales OPE"
+      ],
+      "responses": [
+        "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! En relación a tu consulta, te informamos que no es posible reenviar un documento de una oficina de partes a otra una vez finalizada la derivación (re-derivar). Sin embargo, es posible, después del acuse de recibo, derivar a otras unidades internas, sumándolas a la distribución. Además, la Oficina de Partes Electrónica (OPE) puede agregar destinatarios adicionales. Si tienes más dudas, no dudes en contactarte con nosotros. Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket. Recuerde mantener comunicación con su Administrador(a) y Coordinador de Transformación Digital."
+      ]
+    },
+    {
+      "tag": "docdigital_73__guardar_las_listas_destinatarias",
+      "patterns": [
+        "¿Puedo guardar listas de destinatarios?",
+        "¿No puedo guardar listas de usuarios referenciados?",
+        "guardar listas destinatarias",
+        "cómo guardar una lista de destinatarios",
+        "no se pueden guardar listas de usuarios referenciados"
+      ],
+      "responses": [
+        "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! En relación a tu consulta, te informamos que, por ahora, solo es posible guardar las \"listas destinatarias\". Lamentablemente, no es posible guardar listas de usuarios referenciados en la plataforma. Si tienes más dudas, no dudes en contactarte con nosotros. Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket. Recuerde mantener comunicación con su Administrador(a) y Coordinador de Transformación Digital."
+      ]
+    },
+    {
+      "tag": "docdigital_74__notificacin_documento_compartido_que_no_pude_acceder",
+      "patterns": [
+        "Me compartieron un documento pero no lo veo en mi bandeja",
+        "¿Por qué no puedo acceder a un documento compartido?",
+        "diferencia entre destinatario y compartido",
+        "no me aparece el documento compartido",
+        "el documento compartido no está en la bandeja de entrada"
+      ],
+      "responses": [
+        "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! En relación a tu consulta, es correcto que un documento compartido no le aparezca en su bandeja de entrada, ya que, como indica la comunicación, es solo compartido. En este caso, usted no es un destinatario directo de la comunicación. Si tienes más dudas, no dudes en contactarte con nosotros. Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket. Recuerde mantener comunicación con su Administrador(a) y Coordinador de Transformación Digital."
+      ]
+    },
+    {
+      "tag": "docdigital_75__gestin_de_documentos_eliminar",
+      "patterns": [
+        "¿Cómo elimino un documento en gestión?",
+        "¿Puedo cancelar un documento pendiente?",
+        "¿El administrador puede eliminar documentos?",
+        "cancelar documentos pendientes",
+        "eliminar un proceso tramitado"
+      ],
+      "responses": [
+        "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! En relación a tu consulta, te informamos que tanto el administrador como el administrador principal pueden ver los procesos tramitados y los pendientes. Dentro de la sección pendientes podrá buscar los documentos que indica y \"cancelarlos\". Si tienes más dudas, no dudes en contactarte con nosotros. Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket. Recuerde mantener comunicación con su Administrador(a) y Coordinador de Transformación Digital."
+      ]
+    },
+    {
+      "tag": "docdigital_76__capacitacin_para_administradores",
+      "patterns": [
+        "¿Dónde está la capacitación para administradores de DocDigital?",
+        "Necesito el link de la capacitación de administradores",
+        "capacitación sobre dependencias internas y oficinas de partes",
+        "link a capacitación de admins",
+        "capacitación de gestión avanzada para administradores"
+      ],
+      "responses": [
+        "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! Para tu consulta, te dejamos el enlace a la capacitación dirigida a administradores (as), donde se revisa en detalle el proceso de implementación de dependencias internas y sus respectivas oficinas de partes. Puedes acceder a la capacitación en el siguiente link: Capacitación Administradores Si tienes alguna pregunta adicional, no dudes en contactarte con nosotros. Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket. Recuerde mantener comunicación con su Administrador(a) y Coordinador de Transformación Digital."
+      ]
+    },
+    {
+      "tag": "docdigital_77__hospital_habilitado",
+      "patterns": [
+        "Mi hospital ya está habilitado, ¿qué sigue?",
+        "pasos para habilitar un hospital en DocDigital",
+        "el hospital necesita FirmaGob y DocDigital",
+        "el hospital ya está en el Codificador",
+        "cómo registro al admin principal de un hospital"
+      ],
+      "responses": [
+        "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! En relación a tu consulta, te informamos lo siguiente: El Hospital ya está ingresado en Codificador y puede comenzar el proceso habilitando al Administrador principal en la plataforma Doc Digital Demo https://docv3.cert.digital.gob.cl/. El Coordinador/a de Transformación Digital debe ingresar con ClaveÚnica a este link https://gobdigital.cerofilas.gob.cl/tramites/iniciar/2678 para registrar al Administrador/a Principal. Recuerde que el administrador/a podrá gestionar usuarios, permisos y dependencias internas, y debe completar un ejercicio de habilitación en Doc Digital Producción. Además, se debe habilitar FirmaGob https://firma.digital.gob.cl/. El acto administrativo de aceptación y la designación de roles deben realizarse antes de solicitar habilitación a través de https://gobdigital.cerofilas.gob.cl/. Para más detalles sobre este proceso, te recomendamos revisar las siguientes guías y recursos: Capacitación: https://gobdigital.cerofilas.gob.cl/tramites/informativo/2785 Solicitud de Registros FirmaGob: https://gobdigital.cerofilas.gob.cl/ Si tienes alguna otra pregunta, no dudes en contactarnos. Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket. Recuerde mantener comunicación con su Administrador(a) y Coordinador de Transformación Digital."
+      ]
+    },
+    {
+      "tag": "docdigital_78__excepciones_uso_docdigital",
+      "patterns": [
+        "¿Cuándo no se puede usar DocDigital?",
+        "excepciones para tramitar en papel",
+        "¿Qué documentos no se pueden tramitar en DocDigital?",
+        "documentos de instituciones sin DocDigital",
+        "casos particulares para usar formato físico"
+      ],
+      "responses": [
+        "¡Muchas gracias por comunicarte con el equipo de Mesa de Servicios! En relación a tu consulta, te informamos que existen excepciones específicas en las que no es posible tramitar documentos a través de la Plataforma Doc Digital, entre ellas: Documentos que, por su naturaleza, tamaño o formato en proceso de modificación, no puedan ser tramitados. Documentos provenientes de instituciones que no tienen implementada la plataforma. Casos particulares donde se autorice la tramitación en formato físico o papel. Si tienes dudas adicionales, contáctanos. Para consultas, solicitudes o reportes de error, Ud. puede ingresar un Ticket. Recuerde mantener comunicación con su Administrador(a) y Coordinador de Transformación Digital."
+      ]
+    },
+    {
+      "tag": "despedida",
+      "patterns": [
+        "adiós",
+        "hasta luego",
+        "nos vemos",
+        "chau",
+        "gracias, eso es todo"
+      ],
+      "responses": [
+        "¡Hasta luego!",
+        "Que tengas un buen día.",
+        "Aquí estaré si me necesitas."
+      ]
+    }
+  ]
+}
