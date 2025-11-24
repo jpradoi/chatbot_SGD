@@ -3,11 +3,11 @@ import json
 import pickle
 import numpy as np
 import os
+import nltk
 from dotenv import load_dotenv
 from operator import itemgetter
-
-import nltk
 from nltk.stem import WordNetLemmatizer
+from keras.models import load_model
 
 # --- IMPORTS RAG (Híbrido: Embeddings Locales + LLM Gemini) ---
 from langchain_community.vectorstores import FAISS
@@ -26,11 +26,20 @@ if os.getenv("GOOGLE_API_KEY") is None:
     exit()
 
 # Descarga de NLTK (si es local)
-nltk.download('punkt', quiet=True)
-nltk.download('punkt_tab', quiet=True)
-nltk.download('wordnet', quiet=True)
+try:
+    nltk.data.find('tokenizers/punkt')
+except LookupError:
+    nltk.download('punkt', quiet=True)
 
-from keras.models import load_model
+try:
+    nltk.data.find('tokenizers/punkt_tab')
+except LookupError:
+    nltk.download('punkt_tab', quiet=True)
+
+try:
+    nltk.data.find('corpora/wordnet')
+except LookupError:
+    nltk.download('wordnet', quiet=True)
 
 lemmatizer = WordNetLemmatizer()
 
@@ -91,9 +100,9 @@ def create_rag_chain(vectorstore_path: str, embeddings_model):
 
     retriever = vectorstore.as_retriever()
     
-    # --- LLM (AQUÍ ESTÁ EL CAMBIO) ---
-    # Usamos Gemini Pro. Temperature=0 para respuestas más fácticas.
-    llm = ChatGoogleGenerativeAI(model="gemini-1.5-flash", temperature=0)
+    # --- LLM ---
+    # Usamos Gemini 2.0 flash. Temperature=0 para respuestas más fácticas.
+    llm = ChatGoogleGenerativeAI(model="gemini-2.0-flash", temperature=0)
 
     template = """
     Eres un asistente experto de Secretaría de Gobierno Digital. Responde la pregunta del usuario basándote única y exclusivamente en el siguiente historial y contexto. Si la información no se encuentra en el contexto, di "No tengo información sobre eso".

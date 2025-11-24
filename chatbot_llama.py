@@ -2,11 +2,10 @@ import random
 import json
 import pickle
 import numpy as np
-from dotenv import load_dotenv
-from operator import itemgetter # Para lógica conversacional
-
 import nltk
+from operator import itemgetter # Para lógica conversacional
 from nltk.stem import WordNetLemmatizer
+from keras.models import load_model
 
 # --- IMPORTS RAG ---
 from langchain_community.vectorstores import FAISS
@@ -17,11 +16,21 @@ from langchain_community.chat_models import ChatOllama
 from langchain_community.embeddings import HuggingFaceEmbeddings
 
 
-nltk.download('punkt')
-nltk.download('punkt_tab')
-nltk.download('wordnet')
+# Descarga de NLTK (si es local)
+try:
+    nltk.data.find('tokenizers/punkt')
+except LookupError:
+    nltk.download('punkt', quiet=True)
 
-from keras.models import load_model
+try:
+    nltk.data.find('tokenizers/punkt_tab')
+except LookupError:
+    nltk.download('punkt_tab', quiet=True)
+
+try:
+    nltk.data.find('corpora/wordnet')
+except LookupError:
+    nltk.download('wordnet', quiet=True)
 
 lemmatizer = WordNetLemmatizer()
 

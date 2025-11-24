@@ -24,10 +24,21 @@ if os.getenv("OPENAI_API_KEY") is None:
     print("FATAL: OPENAI_API_KEY no encontrada.")
     exit()
 
+# Descarga de NLTK (si es local)
+try:
+    nltk.data.find('tokenizers/punkt')
+except LookupError:
+    nltk.download('punkt', quiet=True)
 
-# nltk.download('punkt', quiet=True) # quiet=True para limpiar la consola en Lambda
-# nltk.download('punkt_tab', quiet=True)
-# nltk.download('wordnet', quiet=True)
+try:
+    nltk.data.find('tokenizers/punkt_tab')
+except LookupError:
+    nltk.download('punkt_tab', quiet=True)
+
+try:
+    nltk.data.find('corpora/wordnet')
+except LookupError:
+    nltk.download('wordnet', quiet=True)
 
 lemmatizer = WordNetLemmatizer()
 
