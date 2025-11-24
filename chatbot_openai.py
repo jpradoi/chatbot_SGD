@@ -3,11 +3,11 @@ import json
 import pickle
 import numpy as np
 import os
+import nltk
 from dotenv import load_dotenv
 from operator import itemgetter # Para lógica conversacional
-
-import nltk
 from nltk.stem import WordNetLemmatizer
+from keras.models import load_model
 
 # --- IMPORTS RAG (Híbrido: Embeddings Locales + LLM OpenAI) ---
 from langchain_community.vectorstores import FAISS
@@ -25,11 +25,9 @@ if os.getenv("OPENAI_API_KEY") is None:
     exit()
 
 
-nltk.download('punkt', quiet=True) # quiet=True para limpiar la consola en Lambda
-nltk.download('punkt_tab', quiet=True)
-nltk.download('wordnet', quiet=True)
-
-from keras.models import load_model
+# nltk.download('punkt', quiet=True) # quiet=True para limpiar la consola en Lambda
+# nltk.download('punkt_tab', quiet=True)
+# nltk.download('wordnet', quiet=True)
 
 lemmatizer = WordNetLemmatizer()
 
@@ -109,7 +107,7 @@ def create_rag_chain(vectorstore_path: str, embeddings_model):
 
     retriever = vectorstore.as_retriever()
     
-    # 2. LLM (AQUÍ ESTÁ EL CAMBIO)
+    # 2. LLM
     # gpt-4o-mini es rápido y eficiente
     llm = ChatOpenAI(model="gpt-4o-mini") # Para OpenAI
 
@@ -157,7 +155,6 @@ def create_rag_chain(vectorstore_path: str, embeddings_model):
 # --- INICIALIZACIÓN ---
 # (Envuelto en un 'if __name__ == "__main__":' para que Lambda pueda importarlo)
 
-# Estas variables deben ser globales para que Lambda las reutilice en "Warm Starts"
 print("Cargando modelo Keras y archivos pickle...")
 intents = json.loads(open('intents.json', encoding='utf-8').read())
 words = pickle.load(open('words.pkl', 'rb'))
@@ -166,15 +163,24 @@ model = load_model('chatbot_model.h5')
 print("Modelo Keras cargado.")
 
 print("[RAG Setup] Cargando modelo de embeddings locales (HuggingFace)...")
-# Cargamos el modelo de embeddings UNA SOLA VEZ
+model_cache_path = os.getenv("SENTENCE_TRANSFORMERS_HOME")
+
+# Configuramos los argumentos del modelo
+model_kwargs = {}
+if model_cache_path:
+    # Si estamos en Lambda, le decimos dónde buscar el cache
+    print(f"Usando cache de modelo en: {model_cache_path}")
+    model_kwargs = {"cache_folder": model_cache_path}
+
 embeddings_local = HuggingFaceEmbeddings(
-    model_name="sentence-transformers/all-MiniLM-L6-v2"
+    model_name="sentence-transformers/all-MiniLM-L6-v2",
+    model_kwargs=model_kwargs # Pasamos la ubicación del cache
 )
 
-# Cargamos los índices FAISS locales (los construidos con HuggingFace)
+# Cargamos los índices FAISS locales
 rag_chain_firmagob = create_rag_chain("faiss_index_firmagob", embeddings_local)
 rag_chain_docdigital = create_rag_chain("faiss_index_docdigital", embeddings_local)
-print("Todos los pipelines RAG (Híbridos OpenAI) están listos.")
+print("Todos los pipelines RAG están listos.")
 
 
 # --- ROUTER PRINCIPAL ---
@@ -229,6 +235,7 @@ def respuesta(message: str, history_list: list):
     return res, history_list
 
 # --- Bucle para pruebas: comentar si pasa a AWS ---
+'''
 if __name__ == "__main__":
     print("\n--- Bot listo (Modo Híbrido: Embeddings Locales + OpenAI LLM) ---")
     chat_history = []
@@ -239,3 +246,4 @@ if __name__ == "__main__":
 
         bot_response, chat_history = respuesta(message, chat_history)
         print(f"Bot: {bot_response}")
+'''
