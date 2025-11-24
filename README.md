@@ -10,12 +10,17 @@ Para desplegar este proyecto, se requiere:
 - Una API Key de OpenAI válida.
 ## Estructura del proyecto
 - `chatbot_openai.py`: Lógica principal del chatbot (Router, Clasificador y RAG).
-- `index.py`: Servidor FastAPI + adaptador Mangum para recibir peticiones HTTP en Lambda.
+- `index.py`: Servidor FastAPI + adaptador Mangum para recibir peticiones HTTPS en Lambda.
 - `build_index_openai.py`: Script de utilidad (offline) para generar los índices vectoriales FAISS.
 - `dockerfile`: Instrucciones para construir la imagen de contenedor para Lambda.
 - `requirements.txt`: Dependencias de Python.
 - `faiss_index_*/`: Carpetas que contienen la base de conocimiento vectorial pre-construida.
 - `chatbot_model.h5`, `words.pkl`, `classes.pkl`: Archivos del modelo clasificador entrenado.
+## Archivos extras
+- `chatbot_gemini.py`: Versión Gemini de lógica principal del chatbot (Router, Clasificador y RAG).
+- `chatbot_llama.py`: Versión Llama de lógica principal del chatbot (Router, Clasificador y RAG).
+- `index_gemini.py`: Versión Gemini de servidor FastAPI objetivo de uso con uvicorn
+- `index_llama.py`: Versión Llama de servidor FastAPI objetivo de uso con uvicorn
 ## Instrucciones de Despliegue (Para Infraestructura)
 1. **Variables de Entorno (Configuración en Lambda)**
 Es obligatorio configurar la siguiente variable de entorno en la consola de AWS Lambda:
