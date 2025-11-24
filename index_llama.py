@@ -2,8 +2,7 @@ from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from typing import List, Dict, Any, Optional
-from mangum import Mangum
-from chatbot_openai import respuesta 
+from chatbot_llama import respuesta 
 
 app = FastAPI()
 
@@ -43,8 +42,5 @@ def health_check():
     #Endpoint simple para verificar que la Lambda está viva
     return {"status": "ok", "message": "Chatbot API is running"}
 
-# Para ejecutarlo en AWS Lambda
-# handler = Mangum(app)
-
-# Para ejecutarlo localmente con uvicorn:
-# uvicorn index:app --reload
+# Ejecución con uvicorn:
+# uvicorn index_llama:app --reload
