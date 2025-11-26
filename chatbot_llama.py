@@ -2,6 +2,7 @@ import random
 import json
 import pickle
 import numpy as np
+import os
 import nltk
 from operator import itemgetter # Para lógica conversacional
 from nltk.stem import WordNetLemmatizer
@@ -12,6 +13,7 @@ from langchain_community.vectorstores import FAISS
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
 from langchain_core.runnables import RunnableLambda
+from langchain_classic.retrievers import EnsembleRetriever
 from langchain_community.chat_models import ChatOllama
 from langchain_community.embeddings import HuggingFaceEmbeddings
 
@@ -44,6 +46,17 @@ model = load_model('chatbot_model.h5')
 # 0.7 para que sea más estricto con el clasificador.
 # 0.3 para que el RAG se active menos.
 ERROR_THRESHOLD = 0.8
+
+PATHS = {
+    "firmagob": {
+        "faiss": "faiss_index_firmagob",
+        "bm25": "bm25_firmagob.pkl"
+    },
+    "docdigital": {
+        "faiss": "faiss_index_docdigital",
+        "bm25": "bm25_docdigital.pkl"
+    }
+}
 
 # --- FUNCIONES CLASIFICADOR ---
 #Pasamos las palabras de oración a su forma raíz
@@ -93,30 +106,52 @@ def get_response(tag, intents_json):
             break
     return result
 
-# --- LOGICA RAG ---
+# --- LOGICA RAG HÍBRIDO (Gemini + Ensemble) ---
 
-def create_rag_chain(vectorstore_path: str, embeddings_model):
-    """
-    Carga, procesa un PDF y devuelve una cadena RAG lista para invocar.
-    Usa OpenAI para embeddings y generación.
-    """
-    print(f"[RAG Setup] Cargando indice FAISS desde '{vectorstore_path}'...")
-    # 1. Carga índice creado con build_index
-    vectorstore = FAISS.load_local(
-        vectorstore_path,
-        embeddings_model,
-        allow_dangerous_deserialization=True
+def create_rag_chain(doc_key: str, embeddings_model):
+
+    print(f"[RAG Setup] Inicializando sistema híbrido para '{doc_key}'...")
+
+    paths_config = PATHS.get(doc_key)
+    if not paths_config:
+        raise ValueError(f"FATAL: La clave '{doc_key}' no existe en la configuración PATHS.")
+    
+    # 1. Cargar Indice Denso (FAISS)
+    try:
+        vectorstore = FAISS.load_local(
+            paths_config["faiss"],
+            embeddings_model,
+            allow_dangerous_deserialization=True
+        )
+        faiss_retriever = vectorstore.as_retriever(search_kwargs={"k": 4})
+        print(f"   -> FAISS cargado desde {paths_config['faiss']}")
+    except Exception as e:
+        print(f"FATAL: Error cargando el índice FAISS: {e}")
+        raise e
+
+    # 2. Cargar Indice Disperso (BM25)
+    try:
+        with open(paths_config["bm25"], "rb") as f:
+            bm25_retriever = pickle.load(f)
+        bm25_retriever.k = 4 # Aseguramos que traiga top 4 también
+        print(f"   -> BM25 cargado desde {paths_config['bm25']}")
+    except Exception as e:
+        print(f"FATAL: Error cargando BM25 para {doc_key}: {e}")
+        raise e
+
+    # 3. Fusión de Cerebros (Ensemble)
+    # 50% peso semántico, 50% peso literal
+    ensemble_retriever = EnsembleRetriever(
+        retrievers=[bm25_retriever, faiss_retriever],
+        weights=[0.5, 0.5]
     )
-
-
-    retriever = vectorstore.as_retriever()
     
     # 2. LLM
     llm = ChatOllama(model="llama3")
 
     # 3. Prompt Template
     template = """
-    Eres un asistente experto de Secretaría de Gobierno Digital. Responde la pregunta del usuario basándote única y exclusivamente en el siguiente historial y contexto. Si la información no se encuentra en el contexto, di "No tengo información sobre eso".
+    Eres un asistente experto de Secretaría de Gobierno Digital. Responde la pregunta del usuario basándote única y exclusivamente en el siguiente historial y contexto. Si la información no se encuentra en el contexto, di "No tengo información al respecto".
 
     Historial del chat:
     {chat_history}
@@ -131,16 +166,22 @@ def create_rag_chain(vectorstore_path: str, embeddings_model):
     """
     prompt = ChatPromptTemplate.from_template(template)
 
-    # 4. Cadena (Chain) RAG
     def format_docs(docs):
-        return "\n\n".join(doc.page_content for doc in docs)
+        formatted = []
+        for doc in docs:
+            source = doc.metadata.get('source', 'desconocido')
+            page = doc.metadata.get('page', '?')
+            content = doc.page_content.replace("\n", " ") # Limpiamos saltos de línea
+            formatted.append(f"--- Fuente: {source} (Pág {page}) ---\n{content}")
+        return "\n\n".join(formatted)
+    
     def format_history(history_list):   # lógica de historial
         return "\n".join([f"{msg['role']}: {msg['content']}" for msg in history_list])
 
     # Cadena actualizada, con nuevos dict para "question" y "chat_history"
     rag_chain = (
         {
-            "context": itemgetter("question") | retriever | format_docs,
+            "context": itemgetter("question") | ensemble_retriever | format_docs,
             "question": itemgetter("question"),
             "chat_history": itemgetter("chat_history") | RunnableLambda(format_history)
          
@@ -157,76 +198,91 @@ def create_rag_chain(vectorstore_path: str, embeddings_model):
 
 # --- INICIALIZACIÓN ---
 
-print("Cargando modelo Keras y archivos pickle...")
-intents = json.loads(open('intents.json', encoding='utf-8').read())
-words = pickle.load(open('words.pkl', 'rb'))
-classes = pickle.load(open('classes.pkl', 'rb'))
-model = load_model('chatbot_model.h5')
+print("Cargando modelo Keras...")
+# ... (Cargas del modelo Keras ya hechas arriba) ...
 print("Modelo Keras cargado.")
 
 print("[RAG Setup] Cargando modelo de embeddings locales (HuggingFace)...")
-# Cargamos el modelo de embeddings UNA SOLA VEZ
 embeddings_local = HuggingFaceEmbeddings(
-    model_name="sentence-transformers/all-MiniLM-L6-v2"
+    model_name="sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
 )
 
-rag_chain_firmagob = create_rag_chain("faiss_index_firmagob", embeddings_local)
-rag_chain_docdigital = create_rag_chain("faiss_index_docdigital", embeddings_local)
+# Cargamos los índices FAISS
+# Cargamos los RAGs usando las claves del diccionario PATHS
+rag_chain_firmagob = create_rag_chain("firmagob", embeddings_local)
+rag_chain_docdigital = create_rag_chain("docdigital", embeddings_local)
 print("Todos los pipelines RAG están listos.")
 
 
 # --- ROUTER PRINCIPAL ---
 
+KEYWORDS_DOCDIGITAL = [
+    "docdigital", "visar", "visación", "visador", "oficina de partes", 
+    "cadena de responsabilidad", "numerar", "distribuir", "memorando", 
+    "circular", "oficio"
+]
+
+KEYWORDS_FIRMAGOB = [
+    "firmagob", "ministro de fe", "otp", "google authenticator", "token", 
+    "desatendida", "propósito general", "revocar", "operador", 
+    "certificado", "vencimiento"
+]
+
 def respuesta(message: str, history_list: list):
-    # Actua como router, califica la intención y decide si usar RAG o respuestas estáticas. Modificado para lógica historial
-    
-    # Clasifica intención
+    message_lower = message.lower()
     ints_tag, prob = predict_class(message)
 
-    # Caso 1: Alta confianza -> uso de clasificador
     if prob > ERROR_THRESHOLD:
-        # Confianza alta -> respuesta estática
-        print(f"[Router] -> Confianza alta ({prob:.2f}. Intención '{ints_tag}'. Enviando a get_response (JSON)")
+        print(f"[Router] -> Confianza alta ({prob:.2f}). Enviando a get_response (JSON)")
         res = get_response(ints_tag, intents)
-
-    # Caso 2: Baja confianza, tag sugiere FirmaGob -> Uso de RAG Firmagob
-    elif ints_tag.startswith("firmagob_"):
-        print(f"[Router] -> Confianza baja ({prob:.2f}). Tag '{ints_tag}'. Enviando a RAG-FirmaGob...")
-        res = rag_chain_firmagob.invoke({
-            "question": message,
-            "chat_history": history_list
-        })
-
-    # Caso 3: Baja confianza, tag sugiere DocDigital -> Uso de RAG DocDigital
-    elif ints_tag.startswith("docdigital_"):
-        print(f"[Router] -> Confianza baja ({prob:.2f}). Tag '{ints_tag}'. Enviando a RAG-DocDigital...")
-        res = rag_chain_docdigital.invoke({
-            "question": message,
-            "chat_history": history_list
-        })
-
-    # Caso 4: Baja confianza y tag ambiguo -> Fallback
+    
     else:
-        print(f"[Router] -> Confianza baja ({prob:.2f}). Tag ambiguo '{ints_tag}'. Usando RAG-FirmaGob por defecto.")
-        # Decidimos enviar a un RAG por defecto (ej. FirmaGob) como último recurso.
-        res = rag_chain_firmagob.invoke({
-            "question": message,
-            "chat_history": history_list
-        })
+        # Detección booleana rápida
+        is_doc_term = any(k in message_lower for k in KEYWORDS_DOCDIGITAL)
+        is_firma_term = any(k in message_lower for k in KEYWORDS_FIRMAGOB)
 
-    # --- Actualización de memoria ---
-    # 1. Añade el mensaje actual del usuario
+        # Regla A: Vocabulario explícito de DocDigital
+        if is_doc_term:
+            print(f"[Router] -> Keyword DocDigital detectada. Forzando RAG-DocDigital.")
+            res = rag_chain_docdigital.invoke({
+                "question": message,
+                "chat_history": history_list
+            })
+
+        # Regla B: Vocabulario explícito de FirmaGob
+        elif is_firma_term:
+            print(f"[Router] -> Keyword FirmaGob detectada. Forzando RAG-FirmaGob.")
+            res = rag_chain_firmagob.invoke({
+                "question": message,
+                "chat_history": history_list
+            })
+
+        # Regla C: Si no hay keywords claras, volvemos a tu lógica original (Fallback al clasificador)
+        elif ints_tag.startswith("docdigital_"):
+            print(f"[Router] -> Sin keywords. Clasificador sugiere DocDigital ({prob:.2f}).")
+            res = rag_chain_docdigital.invoke({
+                "question": message,
+                "chat_history": history_list
+            })
+
+        # Regla D: Fallback final a FirmaGob (tu default original)
+        else:
+            print(f"[Router] -> Sin keywords. Clasificador sugiere FirmaGob/Ambiguo ({prob:.2f}).")
+            res = rag_chain_firmagob.invoke({
+                "question": message,
+                "chat_history": history_list
+            })
+
+    # Actualización de historial
     history_list.append({"role": "user", "content": message})
-    # 2. añade respuesta del chat
     history_list.append({"role": "assistant", "content": res})
-
-    # 3. Poda historial para mantener últimos 10 mensajes (5 turnos)
+    
     if len(history_list) > 10:
         history_list = history_list[-10:]
 
     return res, history_list
-'''
-# --- Bucle para pruebas: comentar si pasa a AWS ---
+
+# --- Bucle para pruebas sin uso de web service ---
 chat_history = []
 while True:
     message = input("\nTú: ")
@@ -235,4 +291,3 @@ while True:
 
     bot_response, chat_history = respuesta(message, chat_history)
     print(f"Bot: {bot_response}")
-'''
