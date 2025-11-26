@@ -15,6 +15,7 @@ Para desplegar este proyecto, se requiere:
 - `dockerfile`: Instrucciones para construir la imagen de contenedor para Lambda.
 - `requirements.txt`: Dependencias de Python.
 - `faiss_index_*/`: Carpetas que contienen la base de conocimiento vectorial pre-construida.
+- `bm25_*.pkl`: Archivos serializados (Pickle) que almacenan los índices del algoritmo BM25 para habilitar búsqueda léxica.
 - `chatbot_model.h5`, `words.pkl`, `classes.pkl`: Archivos del modelo clasificador entrenado.
 ## Archivos extras
 - `chatbot_gemini.py`: Versión Gemini de lógica principal del chatbot (Router, Clasificador y RAG).
@@ -79,5 +80,5 @@ Respuesta Exitosa (JSON):
 }
 ```
 ## Notas de Mantenimiento
-- **Actualización de Documentación:** Si los manuales PDF cambian, se debe ejecutar python build_index.py localmente para regenerar las carpetas faiss_index y volver a construir/desplegar la imagen Docker.
+- **Actualización de Documentación:** Si los manuales PDF cambian, se debe ejecutar python build_index.py localmente para regenerar las carpetas faiss_index y volver a construir/desplegar la imagen Docker (requiere IA llama local).
 - **Actualización de Intenciones:** Si se edita intents.json, se debe ejecutar python training.py localmente para regenerar el modelo .h5 y volver a construir/desplegar la imagen.
