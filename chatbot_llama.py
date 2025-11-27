@@ -151,7 +151,7 @@ def create_rag_chain(doc_key: str, embeddings_model):
 
     # 3. Prompt Template
     template = """
-    Eres un asistente experto de Secretaría de Gobierno Digital. Responde la pregunta del usuario basándote única y exclusivamente en el siguiente historial y contexto. Si la información no se encuentra en el contexto, di "No tengo información al respecto".
+    Eres un asistente experto de Secretaría de Gobierno Digital. Responde la pregunta del usuario basándote en el siguiente historial y contexto. Si la información no se encuentra en el contexto, di "No tengo información al respecto, pero te recomiendo que levantes un ticket.".
 
     Historial del chat:
     {chat_history}

@@ -11,7 +11,7 @@ Para desplegar este proyecto, se requiere:
 ## Estructura del proyecto
 - `chatbot_openai.py`: Lógica principal del chatbot (Router, Clasificador y RAG).
 - `index.py`: Servidor FastAPI + adaptador Mangum para recibir peticiones HTTPS en Lambda.
-- `build_index_openai.py`: Script de utilidad (offline) para generar los índices vectoriales FAISS.
+- `build_index.py`: Script de utilidad (offline) para generar los índices vectoriales FAISS.
 - `dockerfile`: Instrucciones para construir la imagen de contenedor para Lambda.
 - `requirements.txt`: Dependencias de Python.
 - `faiss_index_*/`: Carpetas que contienen la base de conocimiento vectorial pre-construida.
@@ -22,7 +22,7 @@ Para desplegar este proyecto, se requiere:
 - `chatbot_llama.py`: Versión Llama de lógica principal del chatbot (Router, Clasificador y RAG).
 - `index_gemini.py`: Versión Gemini de servidor FastAPI objetivo de uso con uvicorn
 - `index_llama.py`: Versión Llama de servidor FastAPI objetivo de uso con uvicorn
-## Instrucciones de Despliegue (Para Infraestructura)
+## Instrucciones de Despliegue (Para Infraestructura AWS)
 1. **Variables de Entorno (Configuración en Lambda)**
 Es obligatorio configurar la siguiente variable de entorno en la consola de AWS Lambda:
 
@@ -53,6 +53,27 @@ docker push [123456789012.dkr.ecr.us-east-1.amazonaws.com/chatbot-sgd-lambda:lat
 - **Timeout:** 30 segundos.
 - **Política IAM:** Permisos básicos de ejecución de Lambda y acceso a CloudWatch Logs.
 
+## Instrucciones de despliegue en otros entornos
+### Ejecución Local
+
+Para desarrollo y pruebas. El flag `--reload` reinicia el servidor si el código es editado.
+
+`uvicorn index:app --reload`
+
+Para uso con Gemini, el comando cambia `index:app` por `index_gemini:app`. Para uso con Llama local, el comando cambia `index:app` por `index_llama:app`.
+
+El servicio estará disponible en http://127.0.0.1:8000.
+
+### Despliegue en Producción (Render / Railway)
+
+De subirlo a un PaaS (como Render), la configuración es crítica.
+
+1. Build Command: `pip install -r requirements.txt`
+
+2. Start Command: `uvicorn index:app --host 0.0.0.0 --port $PORT`. Es vital exponer el host a `0.0.0.0` y usar el puerto dinámico del entorno. Para uso con Gemini, el comando cambia `index:app` por `index_gemini:app`.
+
+Nota: No olvides configurar tus Variables de Entorno (GOOGLE_API_KEY, etc.)
+
 ## Uso de la API
 
 Una vez desplegada la Lambda y conectada a un API Gateway, el endpoint principal es:
@@ -80,5 +101,5 @@ Respuesta Exitosa (JSON):
 }
 ```
 ## Notas de Mantenimiento
-- **Actualización de Documentación:** Si los manuales PDF cambian, se debe ejecutar python build_index.py localmente para regenerar las carpetas faiss_index y volver a construir/desplegar la imagen Docker (requiere IA llama local).
-- **Actualización de Intenciones:** Si se edita intents.json, se debe ejecutar python training.py localmente para regenerar el modelo .h5 y volver a construir/desplegar la imagen.
+- **Actualización de Documentación para RAG:** Si los manuales PDF cambian, se debe ejecutar python build_index.py localmente para regenerar las carpetas faiss_index y volver a construir/desplegar la imagen Docker.
+- **Actualización de entrenamiento de Clasificador de Intenciones:** Si se edita intents.json, se debe ejecutar python training.py localmente para regenerar el modelo .h5 y volver a construir/desplegar la imagen.
