@@ -64,6 +64,8 @@ Para uso con Gemini, el comando cambia `index:app` por `index_gemini:app`. Para 
 
 El servicio estará disponible en http://127.0.0.1:8000.
 
+Nota: Es vital crear un archivo .env donde guardar las variables de entorno respectivas. OpenAI requiere una API KEY llamada `OPENAI_API_KEY`. Gemini requiere una API KEY llamada `GOOGLE_API_KEY`.
+
 ### Despliegue en Producción (Render / Railway)
 
 De subirlo a un PaaS (como Render), la configuración es crítica.
@@ -72,7 +74,7 @@ De subirlo a un PaaS (como Render), la configuración es crítica.
 
 2. Start Command: `uvicorn index:app --host 0.0.0.0 --port $PORT`. Es vital exponer el host a `0.0.0.0` y usar el puerto dinámico del entorno. Para uso con Gemini, el comando cambia `index:app` por `index_gemini:app`.
 
-Nota: No olvides configurar tus Variables de Entorno (GOOGLE_API_KEY, etc.)
+Nota: No olvides configurar tus Variables de Entorno (GOOGLE_API_KEY o OPENAI_API_KEY cuando corresponda).
 
 ## Uso de la API
 
