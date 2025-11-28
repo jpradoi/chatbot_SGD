@@ -1,5 +1,5 @@
 # Chatbot de Mesa de Ayuda SGD
-Este repositorio contiene el código fuente y las instrucciones de despliegue para el Chatbot de la Mesa de Ayuda, diseñado para ejecutarse en AWS Lambda utilizando contenedores (Docker).
+Este repositorio contiene el código fuente y las instrucciones de despliegue para el Chatbot de la Mesa de Ayuda, diseñado para ejecutarse en AWS EC2 utilizando contenedores (Docker).
 El chatbot utiliza una arquitectura híbrida:
 1. **Clasificador de Intenciones (Keras/TensorFlow):** Para responder preguntas frecuentes de forma rápida y sin costo.
 2. **Sistema RAG (Retrieval-Augmented Generation):** Para responder preguntas complejas consultando documentación oficial, utilizando OpenAI (gpt-4o-mini) como motor de respuesta y HuggingFace para embeddings locales.
@@ -22,13 +22,14 @@ Para desplegar este proyecto, se requiere:
 - `chatbot_llama.py`: Versión Llama de lógica principal del chatbot (Router, Clasificador y RAG).
 - `index_gemini.py`: Versión Gemini de servidor FastAPI objetivo de uso con uvicorn
 - `index_llama.py`: Versión Llama de servidor FastAPI objetivo de uso con uvicorn
-## Instrucciones de Despliegue (Para Infraestructura AWS)
-1. **Variables de Entorno (Configuración en Lambda)**
+## Instrucciones de Despliegue (Para Infraestructura AWS EC2)
+1. **Variables de Entorno (Archivo .env)**
 Es obligatorio configurar la siguiente variable de entorno en la consola de AWS Lambda:
 
 |      Variable      |               Descripción               |      Ejemplo       |
 |:-------------------|:----------------------------------------|:-------------------|
 | `OPENAI_API_KEY`   | Clave API de OpenAI para el motor RAG   | sk-proj-12345...   |
+| `GOOGLE_API_KEY`   | Clave API de Google (si aplica)         | AlzaSyD...         |
 
 2. Construcción y Subida de la Imagen (Docker)
 Desde la raíz del proyecto:
@@ -40,18 +41,35 @@ aws ecr get-login-password --region us-east-1 | docker login --username AWS --pa
 docker build -t chatbot-sgd-lambda .
 
 # 3. Etiquetar la imagen para ECR
-docker tag chatbot-sgd-lambda:latest [123456789012.dkr.ecr.us-east-1.amazonaws.com/chatbot-sgd-lambda:latest](https://123456789012.dkr.ecr.us-east-1.amazonaws.com/chatbot-sgd-lambda:latest)
+docker tag chatbot-sgd-ec2:latest [123456789012.dkr.ecr.us-east-1.amazonaws.com/chatbot-sgd-ec2:latest](https://123456789012.dkr.ecr.us-east-1.amazonaws.com/chatbot-sgd-ec2:latest)
 
 # 4. Subir la imagen al repositorio ECR
-docker push [123456789012.dkr.ecr.us-east-1.amazonaws.com/chatbot-sgd-lambda:latest](https://123456789012.dkr.ecr.us-east-1.amazonaws.com/chatbot-sgd-lambda:latest)
+docker push [123456789012.dkr.ecr.us-east-1.amazonaws.com/chatbot-sgd-ec2:latest](https://123456789012.dkr.ecr.us-east-1.amazonaws.com/chatbot-sgd-ec2:latest)
 ```
 
-3. Configuración de la Función Lambda
-- **Origen:** Imagen de contenedor (URI del ECR subido).
-- **Arquitectura:** x86_64.
-- **Memoria:** Mínimo 1024 MB (Recomendado: 2048 MB).
-- **Timeout:** 30 segundos.
-- **Política IAM:** Permisos básicos de ejecución de Lambda y acceso a CloudWatch Logs.
+3. Configuración y ejecución en EC2
+- **Tipo de instancia:** `t3.medium` (Mínimo 2 vCPU, 4gb RAM). No usar t2.micro (OOM Crash).
+- **Security Group:** Puertos `22` (SSH) y `8000` (Aplicación) abiertos.
+- **Docker:** Debe estar instalado en la instancia (`sudo apt install docker.io`).
+
+Comandos de despliegue:
+
+```
+# 1. Login en ECR (dentro de la EC2)
+aws ecr get-login-password --region us-east-1 | sudo docker login --username AWS --password-stdin 123456789012.dkr.ecr.us-east-1.amazonaws.com
+
+# 2. Descargar la imagen
+sudo docker pull [123456789012.dkr.ecr.us-east-1.amazonaws.com/chatbot-sgd-ec2:latest](https://123456789012.dkr.ecr.us-east-1.amazonaws.com/chatbot-sgd-ec2:latest)
+
+# 3. Ejecutar el contenedor (Modo Detached)
+# --restart unless-stopped: Si la EC2 se reinicia, el bot revive solo.
+sudo docker run -d \
+  --name chatbot-container \
+  --restart unless-stopped \
+  -p 8000:8000 \
+  --env-file .env \
+  [123456789012.dkr.ecr.us-east-1.amazonaws.com/chatbot-sgd-ec2:latest](https://123456789012.dkr.ecr.us-east-1.amazonaws.com/chatbot-sgd-ec2:latest)
+```
 
 ## Instrucciones de despliegue en otros entornos
 ### Ejecución Local
